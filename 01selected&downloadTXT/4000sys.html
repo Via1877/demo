@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <lable for='addShow'>您的选择是：
+        <input type="text" value='' id='addShow'>
+        <a id="download" download="data.txt" href="javascript:;" onClick='downloadTXT(this)'>
+            下载 TXT
+        </a>
+    </lable>
+    <br>
+    <!-- 选择系统 -->
+    <select name="system" id="system" onchange="showSys(this)">
+        <option value="1">请选择系统</option>              
+      </select>
+      <!-- 选择设备 -->
+      <select name="shebei" id="shebei" onchange="showSb(this)">
+        <option value="1">请选择设备</option>
+      </select>
+      <!-- 选择故障 -->
+      <select name="guzhang" id='guzhang' onchange="showGz(this)">
+        <option>请选择故障</option>
+      </select>
+      <button type="button" class="btn" onClick='show()'>确定</button>
+    <script src="js/sys.js"></script>
+</body>
+</html>
