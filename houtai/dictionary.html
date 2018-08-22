@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/public.css">
+  <link rel="stylesheet" href="css/dictionary.css">
+  <title>Document</title>
+</head>
+
+<body class="bg_body">
+  <div class="container-fluid">
+    <aside class="clearfix">
+      <div class="sidebar clearfix">
+        <div class="container sidebar_container clearfix">
+          <a href="#" class="bar_logo"></a>
+          <ul class="sidebar_top">
+            <li>
+              <a href="#">
+                <span class="icon_index"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_search"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_log"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_warnning"></span>
+              </a>
+            </li>
+          </ul>
+          <ul class="sidebar_bottom">
+            <li>
+              <a href="#">
+                <span class="icon_setting"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_member"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_power"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+    <div class="content-wrapper ">
+      <div class="page_title">
+        <h1>数据字典</h1>
+      </div>
+      <div class="box intro_box  bg_fff">
+        <p class="intro_txt">此界面您可以定义日志字段的映射表，将其一个字段的值映射为更有意义的内容</p>
+        <a class="btn lg_btn create_btn gr_btn">新增字典</a>
+        <a class="btn lg_btn create_btn bl_btn">导入</a>
+        <a class="btn lg_btn create_btn bl_btn">导出</a>
+
+      </div>
+      <div class="height20"></div>
+      <div class="mian  bg_fff">
+        <div class="box">
+          <div class="border padding15">
+            <div class="row  ">
+              <div class="clearfix table_head">
+                <div class="col col1">字典名字</div>
+                <div class="col col2">说明</div>
+                <div class="col col3">操作</div>
+              </div>
+            </div>
+            <div class="row  ">
+              <div class="list_item clearfix" data-toggle="collapse" href="#collapse00" aria-expanded="false" aria-controls="collapseExample">
+                <div class="col col1">
+                  <i class="plusicon"></i>192.168.1.1</div>
+                <div class="col col2">测试</div>
+                <div class="col col3 btn_group">
+                  <a href="#" role="button" class="btn sm_btn gr_btn">新增映射</a>
+                  <a href="#" role="button" class="btn sm_btn bl_btn">编辑字典</a>
+                  <a href="#" role="button" class="btn sm_btn or_btn ">删除字典</a>
+                </div>
+              </div>
+              <div class="collapse hid_box" id="collapse00">
+                <div>
+                  <input type="text" class="input_group_input" placeholder="过滤源字段值">
+                  <button class="sm_btn btn grey_btn reset" type="reset">重置</button>
+                </div>
+                <div class="height20"></div>
+                <table class="border">
+                  <tr>
+                    <td>源字段值</td>
+                    <td>映射后字段值</td>
+                    <td>描述</td>
+                    <td>操作</td>
+                  </tr>
+                  <tr>
+                    <td>apl</td>
+                    <td>Apache HTTP 服务器mod_tcl模式的格式字符串漏洞</td>
+                    <td>暂无描述，有待添加</td>
+                    <td class="caozuo">
+                      <i class="glyphicon glyphicon-edit"></i>
+                      <i class="glyphicon glyphicon-trash"></i>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="row  ">
+              <div class="list_item clearfix" data-toggle="collapse" href="#collapse01" aria-expanded="false" aria-controls="collapseExample">
+                <div class="col col1">
+                  <i class="plusicon"></i>192.168.1.1</div>
+                <div class="col col2">测试</div>
+                <div class="col col3 btn_group">
+                  <a href="#" role="button" class="btn sm_btn gr_btn">新增映射</a>
+                  <a href="#" role="button" class="btn sm_btn bl_btn">编辑字典</a>
+                  <a href="#" role="button" class="btn sm_btn or_btn ">删除字典</a>
+                </div>
+              </div>
+              <div class="collapse hid_box" id="collapse01">
+                <div>
+                  <input type="text" class="input_group_input" placeholder="过滤源字段值">
+                  <button class="sm_btn btn grey_btn reset" type="reset">重置</button>
+                </div>
+                <div class="height20"></div>
+                <table class="border">
+                  <tr>
+                    <td>源字段值</td>
+                    <td>映射后字段值</td>
+                    <td>描述</td>
+                    <td>操作</td>
+                  </tr>
+                  <tr>
+                    <td>apl</td>
+                    <td>Apache HTTP 服务器mod_tcl模式的格式字符串漏洞</td>
+                    <td>暂无描述，有待添加</td>
+                    <td class="caozuo">
+                      <i class="glyphicon glyphicon-edit"></i>
+                      <i class="glyphicon glyphicon-trash"></i>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="row  ">
+              <div class="list_item clearfix" data-toggle="collapse" href="#collapse02" aria-expanded="false" aria-controls="collapseExample">
+                <div class="col col1">
+                  <i class="plusicon"></i>192.168.1.1</div>
+                <div class="col col2">测试</div>
+                <div class="col col3 btn_group">
+                  <a href="#" role="button" class="btn sm_btn gr_btn">新增映射</a>
+                  <a href="#" role="button" class="btn sm_btn bl_btn">编辑字典</a>
+                  <a href="#" role="button" class="btn sm_btn or_btn ">删除字典</a>
+                </div>
+              </div>
+              <div class="collapse hid_box" id="collapse02">
+                <div>
+                  <input type="text" class="input_group_input" placeholder="过滤源字段值">
+                  <button class="sm_btn btn grey_btn reset" type="reset">重置</button>
+                </div>
+                <div class="height20"></div>
+                <table class="border">
+                  <tr>
+                    <td>源字段值</td>
+                    <td>映射后字段值</td>
+                    <td>描述</td>
+                    <td>操作</td>
+                  </tr>
+                  <tr>
+                    <td>apl</td>
+                    <td>Apache HTTP 服务器mod_tcl模式的格式字符串漏洞</td>
+                    <td>暂无描述，有待添加</td>
+                    <td class="caozuo">
+                      <i class="glyphicon glyphicon-edit"></i>
+                      <i class="glyphicon glyphicon-trash"></i>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="row  ">
+              <div class="list_item clearfix" data-toggle="collapse" href="#collapse03" aria-expanded="false" aria-controls="collapseExample">
+                <div class="col col1">
+                  <i class="plusicon"></i>192.168.1.1</div>
+                <div class="col col2">测试</div>
+                <div class="col col3 btn_group">
+                  <a href="#" role="button" class="btn sm_btn gr_btn">新增映射</a>
+                  <a href="#" role="button" class="btn sm_btn bl_btn">编辑字典</a>
+                  <a href="#" role="button" class="btn sm_btn or_btn ">删除字典</a>
+                </div>
+              </div>
+              <div class="collapse hid_box" id="collapse03">
+                <div>
+                  <input type="text" class="input_group_input" placeholder="过滤源字段值">
+                  <button class="sm_btn btn grey_btn reset" type="reset">重置</button>
+                </div>
+                <div class="height20"></div>
+                <table class="border">
+                  <tr>
+                    <td>源字段值</td>
+                    <td>映射后字段值</td>
+                    <td>描述</td>
+                    <td>操作</td>
+                  </tr>
+                  <tr>
+                    <td>apl</td>
+                    <td>Apache HTTP 服务器mod_tcl模式的格式字符串漏洞</td>
+                    <td>暂无描述，有待添加</td>
+                    <td class="caozuo">
+                      <i class="glyphicon glyphicon-edit"></i>
+                      <i class="glyphicon glyphicon-trash"></i>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="row  ">
+              <div class="list_item clearfix" data-toggle="collapse" href="#collapse04" aria-expanded="false" aria-controls="collapseExample">
+                <div class="col col1">
+                  <i class="plusicon"></i>192.168.1.1</div>
+                <div class="col col2">测试</div>
+                <div class="col col3 btn_group">
+                  <a href="#" role="button" class="btn sm_btn gr_btn">新增映射</a>
+                  <a href="#" role="button" class="btn sm_btn bl_btn">编辑字典</a>
+                  <a href="#" role="button" class="btn sm_btn or_btn ">删除字典</a>
+                </div>
+              </div>
+              <div class="collapse hid_box" id="collapse04">
+                <div>
+                  <input type="text" class="input_group_input" placeholder="过滤源字段值">
+                  <button class="sm_btn btn grey_btn reset" type="reset">重置</button>
+                </div>
+                <div class="height20"></div>
+                <table class="border">
+                  <tr>
+                    <td>源字段值</td>
+                    <td>映射后字段值</td>
+                    <td>描述</td>
+                    <td>操作</td>
+                  </tr>
+                  <tr>
+                    <td>apl</td>
+                    <td>Apache HTTP 服务器mod_tcl模式的格式字符串漏洞</td>
+                    <td>暂无描述，有待添加</td>
+                    <td class="caozuo">
+                      <i class="glyphicon glyphicon-edit"></i>
+                      <i class="glyphicon glyphicon-trash"></i>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="row  ">
+              <div class="list_item clearfix" data-toggle="collapse" href="#collapse05" aria-expanded="false" aria-controls="collapseExample">
+                <div class="col col1">
+                  <i class="plusicon"></i>192.168.1.1</div>
+                <div class="col col2">测试</div>
+                <div class="col col3 btn_group">
+                  <a href="#" role="button" class="btn sm_btn gr_btn">新增映射</a>
+                  <a href="#" role="button" class="btn sm_btn bl_btn">编辑字典</a>
+                  <a href="#" role="button" class="btn sm_btn or_btn ">删除字典</a>
+                </div>
+              </div>
+              <div class="collapse hid_box" id="collapse05">
+                <div>
+                  <input type="text" class="input_group_input" placeholder="过滤源字段值">
+                  <button class="sm_btn btn grey_btn reset" type="reset">重置</button>
+                </div>
+                <div class="height20"></div>
+                <table class="border">
+                  <tr>
+                    <td>源字段值</td>
+                    <td>映射后字段值</td>
+                    <td>描述</td>
+                    <td>操作</td>
+                  </tr>
+                  <tr>
+                    <td>apl</td>
+                    <td>Apache HTTP 服务器mod_tcl模式的格式字符串漏洞</td>
+                    <td>暂无描述，有待添加</td>
+                    <td class="caozuo">
+                      <i class="glyphicon glyphicon-edit"></i>
+                      <i class="glyphicon glyphicon-trash"></i>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="row  ">
+              <div class="list_item clearfix" data-toggle="collapse" href="#collapse06" aria-expanded="false" aria-controls="collapseExample">
+                <div class="col col1">
+                  <i class="plusicon"></i>192.168.1.1</div>
+                <div class="col col2">测试</div>
+                <div class="col col3 btn_group">
+                  <a href="#" role="button" class="btn sm_btn gr_btn">新增映射</a>
+                  <a href="#" role="button" class="btn sm_btn bl_btn">编辑字典</a>
+                  <a href="#" role="button" class="btn sm_btn or_btn ">删除字典</a>
+                </div>
+              </div>
+              <div class="collapse hid_box" id="collapse06">
+                <div>
+                  <input type="text" class="input_group_input" placeholder="过滤源字段值">
+                  <button class="sm_btn btn grey_btn reset" type="reset">重置</button>
+                </div>
+                <div class="height20"></div>
+                <table class="border">
+                  <tr>
+                    <td>源字段值</td>
+                    <td>映射后字段值</td>
+                    <td>描述</td>
+                    <td>操作</td>
+                  </tr>
+                  <tr>
+                    <td>apl</td>
+                    <td>Apache HTTP 服务器mod_tcl模式的格式字符串漏洞</td>
+                    <td>暂无描述，有待添加</td>
+                    <td class="caozuo">
+                      <i class="glyphicon glyphicon-edit"></i>
+                      <i class="glyphicon glyphicon-trash"></i>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+
+
+          </div>
+
+          <nav aria-label="Page navigation" class=" clearfix">
+            <ul class="pagination">
+              <li>
+                <a href="#" aria-label="First">
+                  <span aria-hidden="true">首页</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" aria-label="Previous">
+                  <span aria-hidden="true">上一页</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">1</a>
+              </li>
+              <li>
+                <a href="#">2</a>
+              </li>
+              <li>
+                <a href="#">3</a>
+              </li>
+              <li>
+                <a href="#">4</a>
+              </li>
+              <li>
+                <a href="#">5</a>
+              </li>
+              <li>
+                <a href="#">6</a>
+              </li>
+              <li>
+                <a href="#">7</a>
+              </li>
+              <li>
+                <a href="#">8</a>
+              </li>
+              <li>
+                <a href="#" aria-label="Next">
+                  <span aria-hidden="true">下一页</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" aria-label="End">
+                  <span aria-hidden="true">尾页</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="height20"></div>
+    </div>
+  </div>
+
+
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

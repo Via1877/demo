@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/spacing.css">
+  <link rel="stylesheet" href="css/utils.css">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/public.css">
+  <link rel="stylesheet" href="css/rules_list.css">
+  <title>Document</title>
+</head>
+
+<body class="bg_body">
+  <div class="container-fluid">
+    <aside class="clearfix">
+      <div class="sidebar clearfix">
+        <div class="container sidebar_container clearfix">
+          <a href="#" class="bar_logo"></a>
+          <ul class="sidebar_top">
+            <li>
+              <a href="#">
+                <span class="icon_index"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_search"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_log"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_warnning"></span>
+              </a>
+            </li>
+          </ul>
+          <ul class="sidebar_bottom">
+            <li>
+              <a href="#">
+                <span class="icon_setting"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_member"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_power"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+    <div class="content-wrapper ">
+      <div class="page_title">
+        <h1>规则列表</h1>
+      </div>
+      <div class="box intro_box  bg_fff">
+        <p class="intro_txt">此界面定义了多维关联的复杂规则，您可以配置新的复杂时间规则进行数据的可视化和复杂事件的处理。如果需要接收规则输出信息，请预先在相应日志流创建事件输出，制定CEP规则引擎IP和端口，并创建 JSON 格式的复杂事件输入流。</p>
+        <div class="btn_group">
+          <a href="#" role="button" class="btn lg_btn gr_btn">新增应用</a>
+          <a href="#" role="button" class="btn lg_btn bl_btn">数据模型</a>
+          <a href="#" role="button" class="btn lg_btn bl_btn">导入</a>
+          <a href="#" role="button" class="btn lg_btn bl_btn">导出</a>
+        </div>
+      </div>
+      <div class="height20"></div>
+      <div class="mian  bg_fff">
+        <div class="box">
+          <div class="border padding15">
+            <div class="row  ">
+              <div class="clearfix table_head">
+                <div class="col col1">应用</div>
+                <div class="col col2">备注</div>
+                <div class="col col3">操作</div>
+              </div>
+            </div>
+            <div class="row  ">
+              <div class="list_item clearfix" data-toggle="collapse" href="#collapse00" aria-expanded="false" aria-controls="collapseExample">
+                <div class="col col1 font-grey2">
+                  <i class="plusicon"></i>高级关联</div>
+                <div class="col col2 font-grey2">WAF/IDS溯源，IDS检测成功事件</div>
+                <div class="col col3 btn_group">
+                  <a href="#" role="button" class="btn sm_btn gr_btn">编辑规则</a>
+                  <a href="#" role="button" class="btn sm_btn bl_btn">管理输出</a>
+                  <a href="#" role="button" class="btn sm_btn or_btn ">删除应用</a>
+                </div>
+              </div>
+              <div class="collapse hid_box" id="collapse00">
+                <div>
+                  <input type="text" class="input_group_input" placeholder="过滤规则名称">
+                  <button class="sm_btn btn grey_btn reset" type="reset">重置</button>
+                </div>
+                <div class="height20"></div>
+                <table class="border">
+                  <tr>
+                    <td>名称</td>
+                    <td>级别</td>
+                    <td>备注</td>
+                    <td>状态</td>
+                    <td>操作</td>
+                  </tr>
+                  <tr>
+                    <td>IDS事件响应成功</td>
+                    <td>普通</td>
+                    <td>在${ids.all_dst_ip}发生IDS事件响应成功，来源IP为： ${ids.all_src_ip}, 攻击类型为：${ids.ids_subject}, 可疑URL为：${ids.ids_url},
+                      响应码为：${access.access_response}。
+                    </td>
+                    <td>阶段0</td>
+                    <td class="caozuo">
+                      <i class="glyphicon glyphicon-play-circle"></i>
+                      <i class="glyphicon glyphicon-edit"></i>
+                      <i class="glyphicon glyphicon-trash"></i>
+                      <i class="glyphicon glyphicon-filter"></i>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="row  ">
+              <div class="list_item clearfix" data-toggle="collapse" href="#collapse01" aria-expanded="false" aria-controls="collapseExample">
+                <div class="col col1 font-grey2">
+                  <i class="plusicon"></i>Web入侵分析</div>
+                <div class="col col2 font-grey2">XSS跨站功绩、SQL注入、信息泄露、远程执行命令webshell、密码泄露、文件上传、可疑URL等事件</div>
+                <div class="col col3 btn_group">
+                  <a href="#" role="button" class="btn sm_btn gr_btn">编辑规则</a>
+                  <a href="#" role="button" class="btn sm_btn bl_btn">管理输出</a>
+                  <a href="#" role="button" class="btn sm_btn or_btn ">删除应用</a>
+                </div>
+              </div>
+              <div class="collapse hid_box" id="collapse01">
+                <div>
+                  <input type="text" class="input_group_input" placeholder="过滤规则名称">
+                  <button class="sm_btn btn grey_btn reset" type="reset">重置</button>
+                </div>
+                <div class="height20"></div>
+                <table class="border">
+                  <tr>
+                    <td>名称</td>
+                    <td>级别</td>
+                    <td>备注</td>
+                    <td>状态</td>
+                    <td>操作</td>
+                  </tr>
+                  <tr>
+                    <td>IDS事件响应成功</td>
+                    <td>普通</td>
+                    <td>在${ids.all_dst_ip}发生IDS事件响应成功，来源IP为： ${ids.all_src_ip}, 攻击类型为：${ids.ids_subject}, 可疑URL为：${ids.ids_url},
+                      响应码为：${access.access_response}。
+                    </td>
+                    <td>阶段0</td>
+                    <td class="caozuo">
+                      <i class="glyphicon glyphicon-play-circle"></i>
+                      <i class="glyphicon glyphicon-edit"></i>
+                      <i class="glyphicon glyphicon-trash"></i>
+                      <i class="glyphicon glyphicon-filter"></i>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="row  ">
+              <div class="list_item clearfix" data-toggle="collapse" href="#collapse02" aria-expanded="false" aria-controls="collapseExample">
+                <div class="col col1 font-grey2">
+                  <i class="plusicon"></i>网络安全</div>
+                <div class="col col2 font-grey2">可疑端口访问、端口扫描、交换机出口大流量、内网安全违规访问</div>
+                <div class="col col3 btn_group">
+                  <a href="#" role="button" class="btn sm_btn gr_btn">编辑规则</a>
+                  <a href="#" role="button" class="btn sm_btn bl_btn">管理输出</a>
+                  <a href="#" role="button" class="btn sm_btn or_btn ">删除应用</a>
+                </div>
+              </div>
+              <div class="collapse hid_box" id="collapse02">
+                <div>
+                  <input type="text" class="input_group_input" placeholder="过滤规则名称">
+                  <button class="sm_btn btn grey_btn reset" type="reset">重置</button>
+                </div>
+                <div class="height20"></div>
+                <table class="border">
+                  <tr>
+                    <td>名称</td>
+                    <td>级别</td>
+                    <td>备注</td>
+                    <td>状态</td>
+                    <td>操作</td>
+                  </tr>
+                  <tr>
+                    <td>IDS事件响应成功</td>
+                    <td>普通</td>
+                    <td>在${ids.all_dst_ip}发生IDS事件响应成功，来源IP为： ${ids.all_src_ip}, 攻击类型为：${ids.ids_subject}, 可疑URL为：${ids.ids_url},
+                      响应码为：${access.access_response}。
+                    </td>
+                    <td>阶段0</td>
+                    <td class="caozuo">
+                      <i class="glyphicon glyphicon-play-circle"></i>
+                      <i class="glyphicon glyphicon-edit"></i>
+                      <i class="glyphicon glyphicon-trash"></i>
+                      <i class="glyphicon glyphicon-filter"></i>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="row  ">
+              <div class="list_item clearfix" data-toggle="collapse" href="#collapse03" aria-expanded="false" aria-controls="collapseExample">
+                <div class="col col1 font-grey2">
+                  <i class="plusicon"></i>Linux</div>
+                <div class="col col2 font-grey2">主机登陆失败、密码爆破、失效用户登陆、开启过多端口、开启异常端口事件</div>
+                <div class="col col3 btn_group">
+                  <a href="#" role="button" class="btn sm_btn gr_btn">编辑规则</a>
+                  <a href="#" role="button" class="btn sm_btn bl_btn">管理输出</a>
+                  <a href="#" role="button" class="btn sm_btn or_btn ">删除应用</a>
+                </div>
+              </div>
+              <div class="collapse hid_box" id="collapse03">
+                <div>
+                  <input type="text" class="input_group_input" placeholder="过滤规则名称">
+                  <button class="sm_btn btn grey_btn reset" type="reset">重置</button>
+                </div>
+                <div class="height20"></div>
+                <table class="border">
+                  <tr>
+                    <td>名称</td>
+                    <td>级别</td>
+                    <td>备注</td>
+                    <td>状态</td>
+                    <td>操作</td>
+                  </tr>
+                  <tr>
+                    <td>IDS事件响应成功</td>
+                    <td>普通</td>
+                    <td>在${ids.all_dst_ip}发生IDS事件响应成功，来源IP为： ${ids.all_src_ip}, 攻击类型为：${ids.ids_subject}, 可疑URL为：${ids.ids_url},
+                      响应码为：${access.access_response}。
+                    </td>
+                    <td>阶段0</td>
+                    <td class="caozuo">
+                      <i class="glyphicon glyphicon-play-circle"></i>
+                      <i class="glyphicon glyphicon-edit"></i>
+                      <i class="glyphicon glyphicon-trash"></i>
+                      <i class="glyphicon glyphicon-filter"></i>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="row  ">
+              <div class="list_item clearfix" data-toggle="collapse" href="#collapse04" aria-expanded="false" aria-controls="collapseExample">
+                <div class="col col1 font-grey2">
+                  <i class="plusicon"></i>攻击时间归并</div>
+                <div class="col col2 font-grey2">WAF攻击事件归并</div>
+                <div class="col col3 btn_group">
+                  <a href="#" role="button" class="btn sm_btn gr_btn">编辑规则</a>
+                  <a href="#" role="button" class="btn sm_btn bl_btn">管理输出</a>
+                  <a href="#" role="button" class="btn sm_btn or_btn ">删除应用</a>
+                </div>
+              </div>
+              <div class="collapse hid_box" id="collapse04">
+                <div>
+                  <input type="text" class="input_group_input" placeholder="过滤规则名称">
+                  <button class="sm_btn btn grey_btn reset" type="reset">重置</button>
+                </div>
+                <div class="height20"></div>
+                <table class="border">
+                  <tr>
+                    <td>名称</td>
+                    <td>级别</td>
+                    <td>备注</td>
+                    <td>状态</td>
+                    <td>操作</td>
+                  </tr>
+                  <tr>
+                    <td>IDS事件响应成功</td>
+                    <td>普通</td>
+                    <td>在${ids.all_dst_ip}发生IDS事件响应成功，来源IP为： ${ids.all_src_ip}, 攻击类型为：${ids.ids_subject}, 可疑URL为：${ids.ids_url},
+                      响应码为：${access.access_response}。
+                    </td>
+                    <td>阶段0</td>
+                    <td class="caozuo">
+                      <i class="glyphicon glyphicon-play-circle"></i>
+                      <i class="glyphicon glyphicon-edit"></i>
+                      <i class="glyphicon glyphicon-trash"></i>
+                      <i class="glyphicon glyphicon-filter"></i>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+
+
+
+          </div>
+
+          <nav aria-label="Page navigation" class=" clearfix">
+            <ul class="pagination">
+              <li>
+                <a href="#" aria-label="First">
+                  <span aria-hidden="true">首页</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" aria-label="Previous">
+                  <span aria-hidden="true">上一页</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">1</a>
+              </li>
+              <li>
+                <a href="#">2</a>
+              </li>
+              <li>
+                <a href="#">3</a>
+              </li>
+              <li>
+                <a href="#">4</a>
+              </li>
+              <li>
+                <a href="#">5</a>
+              </li>
+              <li>
+                <a href="#">6</a>
+              </li>
+              <li>
+                <a href="#">7</a>
+              </li>
+              <li>
+                <a href="#">8</a>
+              </li>
+              <li>
+                <a href="#" aria-label="Next">
+                  <span aria-hidden="true">下一页</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" aria-label="End">
+                  <span aria-hidden="true">尾页</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="height20"></div>
+    </div>
+  </div>
+
+
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

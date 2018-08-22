@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/spacing.css">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/utils.css">
+  <link rel="stylesheet" href="css/public.css">
+  <link rel="stylesheet" href="css/worksheet_management.css">
+  <title>工单管理</title>
+</head>
+
+<body class="bg_body">
+  <div class="container-fluid">
+    <aside class="clearfix">
+      <div class="sidebar clearfix">
+        <div class="container sidebar_container clearfix">
+          <a href="#" class="bar_logo"></a>
+          <ul class="sidebar_top">
+            <li>
+              <a href="#">
+                <span class="icon_index"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_search"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_log"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_warnning"></span>
+              </a>
+            </li>
+          </ul>
+          <ul class="sidebar_bottom">
+            <li>
+              <a href="#">
+                <span class="icon_setting"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_member"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_power"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+    <div class="content-wrapper ">
+      <div class="page_title">
+        <h1>工单管理</h1>
+      </div>
+      <div class="box intro_box  bg_fff">
+        <p class="intro_txt pad0B">您可以在此界面确认告警，并更改告警状态，重复出现的告警标题将用红色标识</p>
+
+      </div>
+      <div class="height20"></div>
+      <div class="mian  bg_fff">
+        <div class="box pad0T pad0B">
+          <div class="row panel-layout mrg0B">
+            <div class="panel_left panel-box borderR ">
+              <p class="font-size-18 font-grey1 pad20B pad20T">告警数</p>
+              <div class="date">
+                <span class="font-size-14 font-grey2 border pad10R mrg10R">
+                  <a class="icon_date mrg10R glyphicon glyphicon-calendar"> </a>08-10-2018</span>
+                <span class="font-size-14 font-grey2 border pad10R">
+                  <a class="icon_date mrg10R glyphicon glyphicon-calendar"> </a>08-10-2018</span>
+              </div>
+              <div class="pad35T pad30B">
+                <p class="warn_num  pad30B">60</p>
+                <P class="font-size-14 font-grey2">发现50条告警</P>
+
+              </div>
+            </div>
+            <div class=" panel-box panel_right">
+              <p class="font-size-18 font-grey1">告警数量趋势</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="height20"></div>
+        <div class="box pad0T pad0B">
+          <div class="row panel_layout mrg0A">
+            <div class="pad20T pad20B">
+              <div class="dropdown dropdown_01">
+                <button class="btn btn_more dropdown-toggle border pad25R" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                  过滤告警级别
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu more_dropdown_menu" aria-labelledby="dropdownMenu1">
+                  <li>
+                    <a href="#">其他操作</a>
+                  </li>
+                  <li>
+                    <a href="#">其他操作</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="dropdown dropdown_02">
+                <button class="btn btn_more dropdown-toggle border pad25R" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                  过滤处理状态
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu more_dropdown_menu" aria-labelledby="dropdownMenu2">
+                  <li>
+                    <a href="#">其他操作</a>
+                  </li>
+                  <li>
+                    <a href="#">其他操作</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="btn_group">
+                <a href="#" role="button" class="btn sm_btn grey_btn">重置</a>
+              </div>
+            </div>
+            <table class="table table-bordered record_table mrg0B">
+              <thead>
+                <tr>
+                  <th>日志流</th>
+                  <th>
+                    告警标题
+                  </th>
+<th>告警级别</th>
+<th>告警级别</th>
+<th>处理人</th>
+<th>处理状态</th>
+<th>响应时间</th>
+                  <th>操作</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+               Nginx
+           
+                  </td>
+<td>无数据：Ngunx日志无数据</td>
+<td>普通</td>
+<td>2018-08-05 19:25:45</td>
+<td>哈林</td>
+<td>未处理</td>
+<td>2018-08-05 19:25:45</td>
+                      <td>
+                        
+                      </td>
+                </tr>
+
+               
+              </tbody>
+
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="height20"></div>
+  </div>
+  </div>
+
+
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

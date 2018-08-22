@@ -1,0 +1,79 @@
+.icon_remove{
+  display: inline-block;
+  height:24px;
+  width:26px;
+  border-right:1px solid #dfe8f1;
+  background: #f9fbfc;
+  text-align: center;
+  font-size: 12px;
+  line-height: 24px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  cursor: pointer;
+}
+.streams_lists li{
+  float: left;
+  margin-right:10px;
+  margin-bottom:10px;
+}
+.streams_lists li span{
+line-height:24px;
+display: inline-block;
+
+}
+.caret{
+  margin-top:-5px;
+  position:absolute;
+  right:12px;
+  top:50%;
+  
+}
+button.dropdown-toggle{
+  width:100%;
+
+}
+button.dropdown-toggle:hover{
+  color: #9aa0a8;
+}
+.box-wrapper{
+  width:660px;
+}
+.dropdown_box button{
+  text-align:left;
+
+}
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+    outline: none;
+box-shadow:none;
+-webkit-box-shadow:none;
+}
+.yibianpan_lists,
+.bianji_lists{
+  position:absolute;
+  width:100%;
+  bottom:0;
+  background: #fff;
+}
+.dropdown-menu,
+.form-control {
+  width:100%;
+}
+.dropdown_box{
+  position:relative;
+}
+.over_time input{
+  width:48px;
+    display:inline-block;
+    vertical-align:top;
+}
+.over_time>div{
+  width:80px;
+  display:inline-block;
+
+}
+label{
+  font-weight:normal;
+}
+#shiqu{
+  position:relative;
+}

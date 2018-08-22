@@ -1,0 +1,51 @@
+.main_tit{
+  color:#6c818d;
+  font-size: 14px;
+  font-weight: 700;
+}
+.main_tit>span{
+    padding-left: 8px;
+    color:#6c818d;
+    font-weight: 200;
+}
+.lists_box{
+  background: #f9fafe;
+}
+.lists{
+  width:862px;
+  padding:17px 20px;
+}
+.lists>li{
+  float:left;
+  font-size: 12px;
+  padding:3px 0;
+  color:#9aa0a8;
+  padding-right:90px;
+  width:274px;
+}
+.lists>li>b{
+  color:#6c818d;
+  width:126px;
+  display: inline-block;
+}
+.record_summary h2{
+  color:#414c59;
+  font-size: 18px;
+  /* padding-top:30px; */
+}
+.record_summary h2>span{
+  font-size: 14px;
+  color:#9aa0a8;
+}
+.label-default{
+  background-color:#ff6669;
+  color:#fff;
+  padding:5px 8px;
+  margin-left: 11px;
+}
+.record_summary>p{
+  color:#9aa0a8;
+  font-size: 12px;
+  padding-top:12px;
+  padding-bottom:20px;
+}

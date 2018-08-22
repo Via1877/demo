@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/spacing.css">
+  <link rel="stylesheet" href="css/utils.css">
+  <link rel="stylesheet" href="css/public.css">
+  <link rel="stylesheet" href="css/daily_record.css">
+  <title>编辑规则</title>
+</head>
+
+<body class="bg_body">
+  <div class="container-fluid">
+    <aside class="clearfix">
+      <div class="sidebar clearfix">
+        <div class="container sidebar_container clearfix">
+          <a href="#" class="bar_logo"></a>
+          <ul class="sidebar_top">
+            <li>
+              <a href="#">
+                <span class="icon_index"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_search"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_log"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_warnning"></span>
+              </a>
+            </li>
+          </ul>
+          <ul class="sidebar_bottom">
+            <li>
+              <a href="#">
+                <span class="icon_setting"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_member"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_power"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+    <div class="content-wrapper ">
+      <div class="page_title">
+        <h1>
+          <a href="#" class="font-size-14 font-grey2">日志流</a>
+          <span class="gt font-size-14 font-grey2">></span>编辑规则</h1>
+      </div>
+      <div class="box intro_box  bg_fff">
+        <div class="page_title pad0T pad10B">
+          <h1>F5性能日志流</h1>
+        </div>
+        <p class="font-size-12 font-grey2">您可以在此处创建并管理日志流规则，当日志流有数据流入的时候还能够在此处看到相应的变化。</p>
+      </div>
+      <div class="height20"></div>
+      <div class="mian  bg_fff">
+        <div class="box">
+          <div>
+            <h2 class="font-size-16 font-grey3 pad15B pad10T">请加载一条日志信息，以测试日志流规则</h2>
+            <p class="font-size-14 font-grey2">从下面的列表中选择一个输入，然后单机“加载日志消息”，已加载在最后一个小时内输入的最新消息。</p>
+          </div>
+          <div class="tab-cards pad30T">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active">
+                <a href="#news" aria-controls="home" role="tab" data-toggle="tab">最新消息</a>
+              </li>
+              <li role="presentation">
+                <a href="#news_ID" aria-controls="profile" role="tab" data-toggle="tab">消息ID</a>
+              </li>
+
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <!-- 最新消息 start -->
+              <div role="tabpanel" class="tab-pane active" id="news">
+                <div class="input_group pad15T pad40B">
+                  <div class="btn-group">
+                    <button type="button" class="btn font-size-14 font-grey2 no-shadow dropdown-toggle dropdown-toggle01" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      选择一条日志消息
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a href="#">日志消息一</a>
+                      </li>
+                      <li>
+                        <a href="#">日志消息二</a>
+                      </li>
+                      <li>
+                        <a href="#">日志消息三</a>
+                      </li>
+
+                    </ul>
+                  </div>
+                  <button class="sm_btn btn filter bl_btn" type="submit">加载日志消息</button>
+                </div>
+                <div class="">
+                  <div class="rule_box pad40T borderB pad40B">
+                    <h4 class="font-size-16 font-grey1 pad15B">管理日志流规则</h4>
+                    <p class="font-size-14 font-grey2 pad30B">请加载日志消息用于检查规则是否匹配，并且能路由到改日志流。</p>
+                    <div class="radio_group pad20B">
+                      <label class="font-size-14 font-grey3 font-normal display-block">
+                        <input type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">日志消息必须匹配以下所有规则
+                      </label>
+                      <label class="font-size-14 font-grey3 font-normal display-block">
+                        <input type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">日志所有消息必须至少匹配一下规则之一·
+                      </label>
+                    </div>
+                    <div>
+                      <div class="panel rule_item no-shadow">
+                        <p class="font-size-14 font-grey3 pad15L ">字段 source_type 必须完整匹配 F5
+                          <a class="glyphicon glyphicon-trash"></a>
+                          <a class="glyphicon glyphicon-edit"></a>
+                        </p>
+
+                      </div>
+                      <div class="panel rule_item no-shadow">
+                        <p class="font-size-14 font-grey3 pad15L ">字段 source_type 必须完整匹配 F5
+                          <a class="glyphicon glyphicon-trash"></a>
+                          <a class="glyphicon glyphicon-edit"></a>
+                        </p>
+
+                      </div>
+                      <div class="btn_group">
+                        <a href="#" role="button" class="sm_btn btn bl_btn">添加日志流规则</a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="btn_group pad40T">
+                  <a href="#" role="button" class="btn gr_btn sm_btn">完成</a>
+                </div>
+
+              </div>
+              <!-- 最新消息 end -->
+              <!-- 消息ID start -->
+              <div role="tabpanel" class="tab-pane" id="news_ID">
+                <input type="text" class="input_group_input border input_01 pad10L" placeholder="664447d0-9649-11e8-8769-00163e00259f">
+                <input type="text" class="input_group_input border input_02 pad10L" placeholder="test_4">
+
+                <button class="sm_btn btn filter bl_btn" type="submit">加载日志消息</button>
+<div class="panel news_box_02 border mrg20T pad20B mrg40B">
+  <ul>
+<li class=" pad20A ">
+        <p class="font-size-16 font-grey3 pad10B">664447d0-9649-11e8-8769-00163e00259f</p>
+        <p>
+        <span class="font-size-12 font-grey2">Timestamp：2018-08-02 18:25:52 </span>
+        <span class="font-size-12 font-grey2">存储在索引：test_4</span>
+        </p>
+        <div class="btn_group pad25R btn_group_01">
+<a href="#" role="button" class="btn sm_btn grey_btn">固定链接</a>
+          <a href="#" role="button" class="btn sm_btn grey_btn">拷贝ID</a>
+        </div>
+    </li>
+<li class=" mrg20A pad20B mrg0B borderB">
+<p class="font-size-14 font-grey3 pad10B">_time</p>
+<p>
+  <span class="font-size-12 font-grey2">2018-08-02 18:25:52 </span>
+  <span class="font-size-12 font-grey2">test_4</span>
+</p>
+    </li>
+<li class=" mrg20A pad20B mrg0B borderB">
+  <p class="font-size-14 font-grey3 pad10B">_time</p>
+  <p>
+    <span class="font-size-12 font-grey2">2018-08-02 18:25:52 </span>
+    <span class="font-size-12 font-grey2">test_4</span>
+  </p>
+</li>
+<li class=" mrg20A pad20B mrg0B borderB">
+  <p class="font-size-14 font-grey3 pad10B">_time</p>
+  <p>
+    <span class="font-size-12 font-grey2">2018-08-02 18:25:52 </span>
+    <span class="font-size-12 font-grey2">test_4</span>
+  </p>
+</li>
+<li class=" mrg20A pad20B mrg0B borderB">
+  <p class="font-size-14 font-grey3 pad10B">_time</p>
+  <p>
+    <span class="font-size-12 font-grey2">2018-08-02 18:25:52 </span>
+    <span class="font-size-12 font-grey2">test_4</span>
+  </p>
+</li>
+  </ul>
+</div>
+<div class="">
+<div class="rule_box pad40T borderB pad40B " style="border-bottom-style: dashed;">
+    <h4 class="font-size-16 font-grey1 pad15B">管理日志流规则</h4>
+    <p class="font-size-14 font-grey2 pad30B">请加载日志消息用于检查规则是否匹配，并且能路由到改日志流。</p>
+    <div class="radio_group pad20B">
+      <label class="font-size-14 font-grey3 font-normal display-block">
+        <input type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">日志消息必须匹配以下所有规则
+      </label>
+      <label class="font-size-14 font-grey3 font-normal display-block">
+        <input type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">日志所有消息必须至少匹配一下规则之一·
+      </label>
+    </div>
+    <div>
+      <div class="panel rule_item no-shadow">
+        <p class="font-size-14 font-grey3 pad15L ">字段 source_type 必须完整匹配 F5
+          <a class="glyphicon glyphicon-trash"></a>
+          <a class="glyphicon glyphicon-edit"></a>
+        </p>
+
+      </div>
+      <div class="panel rule_item no-shadow">
+        <p class="font-size-14 font-grey3 pad15L ">字段 source_type 必须完整匹配 F5
+          <a class="glyphicon glyphicon-trash"></a>
+          <a class="glyphicon glyphicon-edit"></a>
+        </p>
+
+      </div>
+      <div class="btn_group">
+        <a href="#" role="button" class="sm_btn btn bl_btn">添加日志流规则</a>
+      </div>
+    </div>
+  </div>
+<div class="btn_group pad40T">
+  <a href="#" role="button" class="sm_btn btn gr_btn">完成</a>
+</div>
+</div>
+              </div>
+              <!-- 消息ID end -->
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+      <div class="height20"></div>
+    </div>
+  </div>
+
+
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+.page_title>h1 {
+  color: #414c59;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.page_title {
+  padding-top: 0;
+}
+
+.top_left,
+.top_right {
+  /* width:50%; */
+  /* float: left; */
+  /* height:100%; */
+}
+
+.top_right {
+  /* float: right; */
+}
+
+.top_left .box {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.top_right .box {
+  border-left: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+table {
+  width: 100%;
+}
+
+table {
+  border: 1px solid #dfe8f1;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+table tr td {
+  padding: 20px;
+  width: 50%;
+}
+table tr td{
+  border:1px solid #dfe8f1;
+}
+table tr td:first-child {
+  border-right: 1px solid #dfe8f1;
+}
+.lists{
+  float: left;
+  width:33%;
+}
+.lists li{
+  color: #9aa0a8;
+  font-size: 12px;
+  line-height: 20px;
+  padding-right: 10%;
+
+}
+.lists li:last-child{
+  padding-right:0;
+}
+.lists li>span:first-child{
+  display: inline-table;
+  font-size: 12px;
+  color:#6c818d;
+  line-height: 20px;
+  width: 40%;
+}
+.lists li>span:last-child{
+  color:#9aa0a8;
+  font-size: 12px;
+  line-height: 20px;
+  display: inline-table;
+    width: 60%;
+}
+.lists .thead {
+  color:#6c818d;
+  font-size: 14px ;
+  font-weight: 800;
+  padding-bottom: 15px;
+
+}
+.config_table tr td {
+  color:#9aa0a8;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+.config_table tr td:first-child,
+.config_table tr td:last-child
+{
+  text-align: center;
+  width:15%;
+}
+.config_table thead{
+  background:#f9fafe;
+  font-weight: 700;
+
+}
+.config_table thead td{
+  color:#6c818d;
+}
+.content{
+  position: absolute;
+  top:20px;
+  width:94%;
+}
+.chajian_table tr{
+   border:none;
+}
+.chajian_table tr td{
+  padding:5px 0;
+  border:none !important;
+}
+.chajian_table tr td:first-child{
+  width:15%;
+  min-width:10%;
+}
+.chajian_table tr td:last-child {
+  width:80%;
+}
+.col_left{
+  width:60%;
+}
+.col_right{
+  width:40%;
+}

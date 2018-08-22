@@ -1,0 +1,96 @@
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: none;
+  outline-offset: -2px;
+}
+.btn:active,
+.btn.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.dropdown-toggle01 {
+  background: #fff;
+  border: 1px solid #dfe8f1;
+  padding: 9px;
+  width: 290px;
+  text-align: left;
+  position: relative;
+}
+
+.dropdown-toggle01:hover {
+  color: #9aa0a8;
+}
+
+.btn .caret {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -6px;
+}
+
+.btn_more {
+  color: #8da0aa;
+  font-size: 14px;
+  line-height: 14px;
+  padding: 9px 14px;
+  background: #fff;
+  margin-right: 0;
+}
+
+button.dropdown-toggle:hover {
+  color: #9aa0a8;
+}
+.dropdown_box>button{
+  position: relative;
+  width: 100%;
+  text-align:left!important;
+}
+.dropdown_box{
+  display: inline-block;
+  width:126px;
+  position:relative;
+}
+.search_group{
+  position:relative;
+
+}
+.search_group .input-group-btn .search_btn{
+padding-top:7px;
+padding-bottom:7px;
+  background:transparent;
+
+}
+.search_group .input-group-btn {
+    position:absolute;
+    right: 25px;
+    top: 50%;
+    margin-top: -6px;
+}
+.search_group .form-control{
+  height:30px;
+}
+.search_group .dropdown-menu{
+  position:absolute;
+
+}
+.dropdown-menu-right{
+  right:-24px;
+  top:20px;
+}
+.zoomin {
+  display: inline-block;
+  height: 20px;
+  width: 18px;
+  background: url(../images/icon_zoomIn.png) no-repeat center;
+}
+.table_box{
+  width:80%;
+  height:330px;
+  overflow: scroll;
+}

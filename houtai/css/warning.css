@@ -1,0 +1,43 @@
+.main_tit>span{
+  padding-left: 8px;
+  font-size: 12px;
+  color:#9aa0a8;
+}
+.record_summary>a>h2{
+  font-size: 18px;
+  color:#414c59;
+  padding-bottom: 8px;
+}
+.record_summary>a>h2>span{
+  font-size: 12px;
+  color:#9aa0a8;
+
+}
+.label-danger{
+  background-color: #e74c3c;
+  padding:3px 7px;
+  font-size: 12px;
+  line-height:22px;
+  margin-left: 3px;
+}
+.record_summary>p{
+  padding-bottom: 10px;
+}
+.record_summary>p,
+.record_summary>p.start_time>span:last-child{
+  font-size: 14px;
+color:#6c818d;
+line-height:16px;
+
+}
+.record_summary>p.start_time,
+.record_summary>p>span{
+color:#9aa0a8;
+}
+section{
+  padding:30px 0 20px;
+  border-bottom: 1px solid #e0e9f1;
+}
+.btn_group_right{
+  margin-top:-6px;
+}

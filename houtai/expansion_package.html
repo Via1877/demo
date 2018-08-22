@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/public.css">
+  <link rel="stylesheet" href="css/expansion_package.css">
+  <title>Document</title>
+</head>
+
+<body class="bg_body">
+  <div class="container-fluid">
+    <!-- 侧边栏 start -->
+    <aside class="clearfix">
+      <div class="sidebar clearfix">
+        <div class="container sidebar_container clearfix">
+          <a href="#" class="bar_logo"></a>
+          <ul class="sidebar_top">
+            <li>
+              <a href="#">
+                <span class="icon_index"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_search"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_log"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_warnning"></span>
+              </a>
+            </li>
+          </ul>
+          <ul class="sidebar_bottom">
+            <li>
+              <a href="#">
+                <span class="icon_setting"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_member"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_power"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+    <!-- 侧边栏 end -->
+    <!-- 内容 start -->
+    <div class="content-wrapper ">
+      <div class="page_title">
+        <h1>新建扩展包</h1>
+      </div>
+      <div class="box intro_box  bg_fff">
+        <p class="intro_txt">将输入，输出，流和仪表盘作为扩展包导出</p>
+      </div>
+      <div class="height20"></div>
+      <div class="mian  bg_fff">
+        <div class="box">
+          <form class="create_form" action="#">
+            <div class="form-group">
+              <label for="userName">名称</label>
+              <input type="name" class="form-control" id="userName" placeholder="扩展包的名称">
+            </div>
+            <div class="form-group">
+              <label for="userInfo">描述</label>
+              <textarea type="text" class="form-control" id="userInfo" placeholder="扩展包的描述"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="userName">类别</label>
+              <input type="name" class="form-control" id="userName" placeholder="您的扩展包的类别，例如 操作系统、防火墙或交换机等。">
+            </div>
+            <div class="competence_group">
+              <h3>内容</h3>
+              <div>
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                  <li role="presentation" class="active">
+                    <a href="#input" aria-controls="home" role="tab" data-toggle="tab">
+                      输入
+                    </a>
+                  </li>
+                  <li role="presentation">
+                    <a href="#Grok" aria-controls="profile" role="tab" data-toggle="tab">Grok模式</a>
+                  </li>
+                  <li role="presentation">
+                    <a href="#output" aria-controls="messages" role="tab" data-toggle="tab">输出</a>
+                  </li>
+                  <li role="presentation">
+                    <a href="#log" aria-controls="home" role="tab" data-toggle="tab">日志流</a>
+                  </li>
+                  <li role="presentation">
+                    <a href="#dashboard" aria-controls="profile" role="tab" data-toggle="tab">仪表盘</a>
+                  </li>
+                  <li role="presentation">
+                    <a href="#query" aria-controls="messages" role="tab" data-toggle="tab">查询表</a>
+                  </li>
+                  <li role="presentation">
+                    <a href="#query_cache" aria-controls="messages" role="tab" data-toggle="tab">查询缓存</a>
+                  </li>
+                  <li role="presentation">
+                    <a href="#data_adaptation" aria-controls="messages" role="tab" data-toggle="tab">查询表-数据适配器</a>
+                  </li>
+                  <li role="presentation">
+                    <a href="#data_drilling" aria-controls="messages" role="tab" data-toggle="tab">数据钻取</a>
+                  </li>
+                  <li role="presentation">
+                    <a href="#log_stream_processor" aria-controls="messages" role="tab" data-toggle="tab">日志流处理器</a>
+                  </li>
+                  <li role="presentation">
+                    <a href="#topological_graph" aria-controls="messages" role="tab" data-toggle="tab">拓扑图</a>
+                  </li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <!-- 输入 start -->
+                  <div role="tabpanel" class="tab-pane active" id="input">
+                    <div class="checkbox_group">
+                      <div class="checkbox all_check">
+                        <label>
+                          <input type="checkbox" value="">全选
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">F5性能日志（56546bbsda5456）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> linux_syslog(5456132542fsdf21)
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> nginx_cep日志（54654sdfsdfsdff）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">F5性能日志（56546bbsda5456）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> linux_syslog(5456132542fsdf21)
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> nginx_cep日志（54654sdfsdfsdff）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">F5性能日志（56546bbsda5456）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> linux_syslog(5456132542fsdf21)
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> nginx_cep日志（54654sdfsdfsdff）
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 输入 end -->
+                  <!-- Grok模式 start -->
+                  <div role="tabpanel" class="tab-pane" id="Grok">
+                    <div class="checkbox_group">
+                      <div class="checkbox all_check">
+                        <label>
+                          <input type="checkbox" value="">全选
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">F5性能日志（56546bbsda5456）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> linux_syslog(5456132542fsdf21)
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> nginx_cep日志（54654sdfsdfsdff）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">F5性能日志（56546bbsda5456）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> linux_syslog(5456132542fsdf21)
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> nginx_cep日志（54654sdfsdfsdff）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">F5性能日志（56546bbsda5456）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> linux_syslog(5456132542fsdf21)
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> nginx_cep日志（54654sdfsdfsdff）
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Grok模式 end -->
+                  <!-- 输出 start -->
+                  <div role="tabpanel" class="tab-pane " id="output">
+                    <div class="checkbox_group">
+                      <div class="checkbox all_check">
+                        <label>
+                          <input type="checkbox" value="">全选
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">F5性能日志（56546bbsda5456）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> linux_syslog(5456132542fsdf21)
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> nginx_cep日志（54654sdfsdfsdff）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">F5性能日志（56546bbsda5456）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> linux_syslog(5456132542fsdf21)
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> nginx_cep日志（54654sdfsdfsdff）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">F5性能日志（56546bbsda5456）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> linux_syslog(5456132542fsdf21)
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> nginx_cep日志（54654sdfsdfsdff）
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 输出 end -->
+                  <!-- 日志流 start -->
+                  <div role="tabpanel" class="tab-pane " id="log">
+                    <div class="checkbox_group">
+                      <div class="checkbox all_check">
+                        <label>
+                          <input type="checkbox" value="">全选
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">F5性能日志（56546bbsda5456）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> linux_syslog(5456132542fsdf21)
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> nginx_cep日志（54654sdfsdfsdff）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">F5性能日志（56546bbsda5456）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> linux_syslog(5456132542fsdf21)
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> nginx_cep日志（54654sdfsdfsdff）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">F5性能日志（56546bbsda5456）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> linux_syslog(5456132542fsdf21)
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> nginx_cep日志（54654sdfsdfsdff）
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 日志流 end -->
+                  <!-- 仪表盘 start -->
+                  <div role="tabpanel" class="tab-pane " id="dashboard">
+                    <div class="checkbox_group">
+                      <div class="checkbox all_check">
+                        <label>
+                          <input type="checkbox" value="">全选
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">F5性能日志（56546bbsda5456）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> linux_syslog(5456132542fsdf21)
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> nginx_cep日志（54654sdfsdfsdff）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">F5性能日志（56546bbsda5456）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> linux_syslog(5456132542fsdf21)
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> nginx_cep日志（54654sdfsdfsdff）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">F5性能日志（56546bbsda5456）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> linux_syslog(5456132542fsdf21)
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> nginx_cep日志（54654sdfsdfsdff）
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 仪表盘 end -->
+                  <!-- 查询表 start -->
+                  <div role="tabpanel" class="tab-pane " id="query">
+                    <div class="checkbox_group">
+                      <div class="checkbox all_check">
+                        <label>
+                          <input type="checkbox" value="">全选
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">F5性能日志（56546bbsda5456）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> linux_syslog(5456132542fsdf21)
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> nginx_cep日志（54654sdfsdfsdff）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">F5性能日志（56546bbsda5456）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> linux_syslog(5456132542fsdf21)
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> nginx_cep日志（54654sdfsdfsdff）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">F5性能日志（56546bbsda5456）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> linux_syslog(5456132542fsdf21)
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> nginx_cep日志（54654sdfsdfsdff）
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 查询表 end -->
+                  <!-- 查询缓存 start -->
+                  <div role="tabpanel" class="tab-pane " id="query_cache">
+                    <div class="checkbox_group">
+                      <div class="checkbox all_check">
+                        <label>
+                          <input type="checkbox" value="">全选
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">F5性能日志（56546bbsda5456）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> linux_syslog(5456132542fsdf21)
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> nginx_cep日志（54654sdfsdfsdff）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">F5性能日志（56546bbsda5456）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> linux_syslog(5456132542fsdf21)
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> nginx_cep日志（54654sdfsdfsdff）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">F5性能日志（56546bbsda5456）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> linux_syslog(5456132542fsdf21)
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> nginx_cep日志（54654sdfsdfsdff）
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 查询缓存 end -->
+                  <!-- 查询表-数据适配器 start -->
+                  <div role="tabpanel" class="tab-pane" id="data_adaptation">
+                    <div class="checkbox_group">
+                      <div class="checkbox all_check">
+                        <label>
+                          <input type="checkbox" value="">全选
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">F5性能日志（56546bbsda5456）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> linux_syslog(5456132542fsdf21)
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> nginx_cep日志（54654sdfsdfsdff）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">F5性能日志（56546bbsda5456）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> linux_syslog(5456132542fsdf21)
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> nginx_cep日志（54654sdfsdfsdff）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">F5性能日志（56546bbsda5456）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> linux_syslog(5456132542fsdf21)
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> nginx_cep日志（54654sdfsdfsdff）
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 查询表-数据适配器 end -->
+                  <!-- 数据钻取 start -->
+                  <div role="tabpanel" class="tab-pane active" id="data_drilling">
+                    <div class="checkbox_group">
+                      <div class="checkbox all_check">
+                        <label>
+                          <input type="checkbox" value="">全选
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">F5性能日志（56546bbsda5456）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> linux_syslog(5456132542fsdf21)
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> nginx_cep日志（54654sdfsdfsdff）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">F5性能日志（56546bbsda5456）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> linux_syslog(5456132542fsdf21)
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> nginx_cep日志（54654sdfsdfsdff）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">F5性能日志（56546bbsda5456）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> linux_syslog(5456132542fsdf21)
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> nginx_cep日志（54654sdfsdfsdff）
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 数据钻取 end -->
+                  <!-- 日志流处理器 start -->
+                  <div role="tabpanel" class="tab-pane active" id="log_stream_processor">
+                    <div class="checkbox_group">
+                      <div class="checkbox all_check">
+                        <label>
+                          <input type="checkbox" value="">全选
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">F5性能日志（56546bbsda5456）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> linux_syslog(5456132542fsdf21)
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> nginx_cep日志（54654sdfsdfsdff）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">F5性能日志（56546bbsda5456）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> linux_syslog(5456132542fsdf21)
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> nginx_cep日志（54654sdfsdfsdff）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">F5性能日志（56546bbsda5456）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> linux_syslog(5456132542fsdf21)
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> nginx_cep日志（54654sdfsdfsdff）
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 日志流处理器 end -->
+                  <!-- 拓扑图 start -->
+                  <div role="tabpanel" class="tab-pane active" id="topological_graph">
+                    <div class="checkbox_group">
+                      <div class="checkbox all_check">
+                        <label>
+                          <input type="checkbox" value="">全选
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">F5性能日志（56546bbsda5456）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> linux_syslog(5456132542fsdf21)
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> nginx_cep日志（54654sdfsdfsdff）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">F5性能日志（56546bbsda5456）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> linux_syslog(5456132542fsdf21)
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> nginx_cep日志（54654sdfsdfsdff）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">F5性能日志（56546bbsda5456）
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> linux_syslog(5456132542fsdf21)
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value=""> nginx_cep日志（54654sdfsdfsdff）
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 拓扑图 end -->
+                </div>
+
+              </div>
+            </div>
+            <a href="#" role="button" class="btn bl_btn sm_btn">保存</a>
+          </form>
+        </div>
+      </div>
+      <div class="height20"></div>
+    </div>
+    <!-- 内容 end -->
+  </div>
+
+
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

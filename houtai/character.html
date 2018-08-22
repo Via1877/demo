@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/public.css">
+  <link rel="stylesheet" href="css/character.css">
+  <title>Document</title>
+</head>
+
+<body class="bg_body">
+  <div class="container-fluid">
+    <!-- 侧边栏 start -->
+    <aside class="clearfix">
+      <div class="sidebar clearfix">
+        <div class="container sidebar_container clearfix">
+          <a href="#" class="bar_logo"></a>
+          <ul class="sidebar_top">
+            <li>
+              <a href="#">
+                <span class="icon_index"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_search"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_log"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_warnning"></span>
+              </a>
+            </li>
+          </ul>
+          <ul class="sidebar_bottom">
+            <li>
+              <a href="#">
+                <span class="icon_setting"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_member"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_power"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+    <!-- 侧边栏 end -->
+    <!-- 内容 start -->
+    <div class="content-wrapper ">
+      <div class="page_title">
+        <h1>角色</h1>
+      </div>
+      <div class="box intro_box  bg_fff">
+        <p class="intro_txt">角色可以一次给多个用户分配权限</p>
+      </div>
+      <div class="height20"></div>
+      <div class="mian  bg_fff">
+        <div class="box">
+            <form class="create_form" action="#">
+              <h2 class="form_tit">创建角色</h2>
+              <div class="form-group">
+                <label for="userName">名称</label>
+                <input type="name" class="form-control" id="userName">
+              </div>
+              <div class="form-group">
+                <label for="userInfo">描述</label>
+                <input type="text" class="form-control" id="userInfo">
+              </div>
+              <div class="competence_group">
+                <h3>权限</h3>
+                <p>请选择此角色的权限</p>
+                <div>
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active">
+                      <a href="#log" aria-controls="home" role="tab" data-toggle="tab">日志流</a>
+                    </li>
+                    <li role="presentation">
+                      <a href="#dashboard" aria-controls="profile" role="tab" data-toggle="tab">仪表盘</a>
+                    </li>
+                    <li role="presentation">
+                      <a href="#system" aria-controls="messages" role="tab" data-toggle="tab">系统权限</a>
+                    </li>
+                  </ul>
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <!-- 日志流 start -->
+                    <div role="tabpanel" class="tab-pane active" id="log">
+                        <div class="input_group">
+                          <span class="input_group_tit">过滤日志流</span>
+                          <input type="text" class="input_group_input border">
+                          <button class="sm_btn btn filter bl_btn" type="submit">过滤</button>
+                          <button class="sm_btn btn grey_btn reset" type="reset">重置</button>
+                        </div>
+                        <div class="checkbox_group">
+                          <div class="checkbox all_check">
+                            <label>
+                              <input type="checkbox" value="">全选
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" value="">F5性能日志流
+                              <p>交易日志</p>
+                            </label>
+                            <div class="btn_group_right">
+                              <a href="#" role="button">允许查看</a>
+                              <a href="#" role="button">允许编辑</a>
+                            </div>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" value="" > Trans日志流
+                              <p>交易日志</p>
+                            </label>
+                            <div class="btn_group_right">
+                              <a href="#" role="button">允许查看</a>
+                              <a href="#" role="button">允许编辑</a>
+                            </div>
+                          </div>
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" value="" > 所有日志
+                              <p>交易日志</p>
+                              </label>
+                              <div class="btn_group_right">
+                                <a href="#" role="button">允许查看</a>
+                                <a href="#" role="button">允许编辑</a>
+                              </div>
+                            </div>
+                        </div>
+                          <div class="btn_group padding30">
+                          <a href="#" role="button" class="btn  bl_btn sm_btn">保存</a>
+                          <a href="#" role="button" class="btn grey_btn sm_btn">取消</a>
+                        </div>
+       
+                    </div>
+                    <!-- 日志流 end -->
+                    <!-- 仪表盘 start -->
+                    <div role="tabpanel" class="tab-pane" id="dashboard">仪表盘</div>
+                    <!-- 仪表盘 end -->
+                    <!-- 系统权限 start -->
+                    <div role="tabpanel" class="tab-pane" id="system">系统权限</div>
+                    <!-- 系统权限 end -->
+                  </div>
+
+                </div>
+
+              </div>
+            </form>
+        </div>
+      </div>
+      <div class="height20"></div>
+    </div>
+    <!-- 内容 end -->
+  </div>
+
+
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

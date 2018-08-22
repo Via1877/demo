@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/spacing.css">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/public.css">
+  <link rel="stylesheet" href="css/daily_record.css">
+  <title>日志流管理器02</title>
+</head>
+
+<body class="bg_body">
+  <div class="container-fluid">
+    <aside class="clearfix">
+      <div class="sidebar clearfix">
+        <div class="container sidebar_container clearfix">
+          <a href="#" class="bar_logo"></a>
+          <ul class="sidebar_top">
+            <li>
+              <a href="#">
+                <span class="icon_index"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_search"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_log"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_warnning"></span>
+              </a>
+            </li>
+          </ul>
+          <ul class="sidebar_bottom">
+            <li>
+              <a href="#">
+                <span class="icon_setting"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_member"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_power"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+    <div class="content-wrapper ">
+      <div class="page_title">
+        <h1>日志流管理器</h1>
+      </div>
+      <div class="box intro_box  bg_fff">
+        <p class="intro_txt">你可以使用自定义的匹配规则来将输入的日志消息路由到日志流，同一条日志消息也可以路由到多个日志流</p>
+        <a class="btn lg_btn create_btn gr_btn">创建日志流处理器</a>
+        <a class="btn lg_btn create_btn bl_btn">管理日志流处理器</a>
+        <a class="btn lg_btn create_btn bl_btn">管理规则</a>
+      </div>
+      <div class="height20"></div>
+      <div class="mian  bg_fff">
+        <div class="box">
+          <div>
+            <from>
+              <div class="input_group">
+                <span class="input_group_tit">过滤日志流处理器</span>
+                <input type="text" class="input_group_input border">
+                <button class="sm_btn btn filter bl_btn" type="submit">过滤</button>
+                <button class="sm_btn btn grey_btn reset" type="reset">重置</button>
+              </div>
+            </from>
+            <table class="table table-bordered record_table mrg0B">
+              <thead>
+                <tr>
+                  <th>日志流处理器</th>
+                  <th>
+                    链接日志流
+                  </th>
+                  <th>处理时间</th>
+                  <th>操作</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <a class="font-blue pad5R" href="#">F5性能处理器</a>
+                    <span class="pad5R">F5性能处理器</span>
+                    <span>吞吐量：0信息/秒</span>
+                  </td>
+                  <td>F5性能日志流</td>
+                  <td>阶段0</td>
+                  <td>
+                    <a class="glyphicon glyphicon-trash pad20R "></a>
+                    <a class="glyphicon glyphicon-edit"></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+<a class="font-blue pad5R" href="#">log_pipo</a>
+<span class="pad5R"> This is a log flow test </span>
+                    <span>吞吐量：0信息/秒</span>
+                  </td>
+                  <td>F5性能日志流</td>
+                  <td>阶段0</td>
+                  <td>
+                    <a class="glyphicon glyphicon-trash pad20R "></a>
+                    <a class="glyphicon glyphicon-edit"></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+<a class="font-blue pad5R" href="#">启明IDS </a>
+<span class="pad5R">启明IDS</span>
+                    <span>吞吐量：0信息/秒</span>
+                  </td>
+                  <td>F5性能日志流</td>
+                  <td>阶段0</td>
+                  <td>
+                    <a class="glyphicon glyphicon-trash pad20R "></a>
+                    <a class="glyphicon glyphicon-edit"></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+<a class="font-blue pad5R" href="#">启明防毒墙</a>
+<span class="pad5R">启明防毒墙</span>
+<span>吞吐量：20 信息/秒</span>
+                  </td>
+                  <td>F5性能日志流</td>
+                  <td>阶段0</td>
+                  <td>
+                    <a class="glyphicon glyphicon-trash pad20R "></a>
+                    <a class="glyphicon glyphicon-edit"></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+<a class="font-blue pad5R" href="#">绿盟IPS</a>
+<span class="pad5R">绿盟IPS </span>
+                    <span>吞吐量：50信息/秒</span>
+                  </td>
+                  <td>F5性能日志流</td>
+                  <td>阶段0</td>
+                  <td>
+                    <a class="glyphicon glyphicon-trash pad20R "></a>
+                    <a class="glyphicon glyphicon-edit"></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a class="font-blue pad5R" href="#">F5性能处理器</a>
+                    <span class="pad5R">F5性能处理器</span>
+                    <span>吞吐量：0信息/秒</span>
+                  </td>
+                  <td>F5性能日志流</td>
+                  <td>阶段0</td>
+                  <td>
+                    <a class="glyphicon glyphicon-trash pad20R "></a>
+                    <a class="glyphicon glyphicon-edit"></a>
+                  </td>
+                </tr>
+<tr>
+  <td>
+    <a class="font-blue pad5R" href="#">log_pipo</a>
+    <span class="pad5R"> This is a log flow test </span>
+    <span>吞吐量：0信息/秒</span>
+  </td>
+  <td>F5性能日志流</td>
+  <td>阶段0</td>
+  <td>
+    <a class="glyphicon glyphicon-trash pad20R "></a>
+    <a class="glyphicon glyphicon-edit"></a>
+  </td>
+</tr>
+<tr>
+  <td>
+    <a class="font-blue pad5R" href="#">启明IDS </a>
+    <span class="pad5R">启明IDS</span>
+    <span>吞吐量：0信息/秒</span>
+  </td>
+  <td>F5性能日志流</td>
+  <td>阶段0</td>
+  <td>
+    <a class="glyphicon glyphicon-trash pad20R "></a>
+    <a class="glyphicon glyphicon-edit"></a>
+  </td>
+</tr>
+<tr>
+  <td>
+    <a class="font-blue pad5R" href="#">启明防毒墙</a>
+    <span class="pad5R">启明防毒墙</span>
+    <span>吞吐量：20 信息/秒</span>
+  </td>
+  <td>F5性能日志流</td>
+  <td>阶段0</td>
+  <td>
+    <a class="glyphicon glyphicon-trash pad20R "></a>
+    <a class="glyphicon glyphicon-edit"></a>
+  </td>
+</tr>
+<tr>
+  <td>
+    <a class="font-blue pad5R" href="#">绿盟IPS</a>
+    <span class="pad5R">绿盟IPS </span>
+    <span>吞吐量：50信息/秒</span>
+  </td>
+  <td>F5性能日志流</td>
+  <td>阶段0</td>
+  <td>
+    <a class="glyphicon glyphicon-trash pad20R "></a>
+    <a class="glyphicon glyphicon-edit"></a>
+  </td>
+</tr>
+              </tbody>
+
+            </table>
+
+            <nav aria-label="Page navigation" class=" clearfix">
+              <ul class="pagination">
+                <li>
+                  <a href="#" aria-label="First">
+                    <span aria-hidden="true">首页</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">上一页</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">1</a>
+                </li>
+                <li>
+                  <a href="#">2</a>
+                </li>
+                <li>
+                  <a href="#">3</a>
+                </li>
+                <li>
+                  <a href="#">4</a>
+                </li>
+                <li>
+                  <a href="#">5</a>
+                </li>
+                <li>
+                  <a href="#">6</a>
+                </li>
+                <li>
+                  <a href="#">7</a>
+                </li>
+                <li>
+                  <a href="#">8</a>
+                </li>
+                <li>
+                  <a href="#" aria-label="Next">
+                    <span aria-hidden="true">下一页</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" aria-label="End">
+                    <span aria-hidden="true">尾页</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="height20"></div>
+    </div>
+  </div>
+
+
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+.icon_date {
+  display: inline-block;
+  height: 32px;
+  width: 36px;
+  border-right: 1px solid #dfe8f1;
+  background: #f9fbfc;
+  text-align: center;
+  font-size: 14px;
+  line-height: 32px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  cursor: pointer;
+  color:#414c59;
+}
+.date>span{
+  display: inline-block;
+  line-height: 32px;
+  width:155px;
+}
+.warn_num{
+  font-size: 92px;
+  font-weight: 800;
+  color:#ff6669;
+  text-align:center;
+  padding-right:20px;
+}
+.warn_num~p{
+    text-align:center;
+    padding-right:20px;
+}
+.borderR{
+  border-right:1px solid #dfe8f1;
+}
+.panel_left{
+  width:342px;
+}
+.panel_right{
+  width:100%;
+}
+.dropdown-toggle01 {
+  background: #fff;
+  border: 1px solid #dfe8f1;
+  padding: 9px;
+  width: 290px;
+  text-align: left;
+  position: relative;
+}
+
+.dropdown-toggle01:hover {
+  color: #9aa0a8;
+}
+
+.btn .caret {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -6px;
+}
+.btn_more {
+  color: #8da0aa;
+  font-size: 14px;
+  line-height: 14px;
+  padding: 9px 14px;
+  background: #fff;
+  margin-right: 0;
+}
+button.dropdown-toggle:hover {
+  color: #9aa0a8;
+}
+.dropdown_01>button,
+.dropdown_02>button{
+  position: relative;
+}
+.dropdown,.btn_group {
+  display: inline-block;
+  margin-right:5px;
+}
+.table>thead>tr>th,
+.table>tbody>tr>th,
+.table>tfoot>tr>th {
+font-weight:800;
+color:#6c818d;
+text-align: center;
+}
+.table td{
+  text-align: center;
+}
+.table>thead>tr>th:first-child,
+.table>tbody>tr>th:first-child,
+.table>tfoot>tr>th:first-child,
+.table>tbody>tr>td:first-child,
+.table>thead>tr>th:nth-child(2),
+.table>tbody>tr>th:nth-child(2),
+.table>tfoot>tr>th:nth-child(2),
+.table>tbody>tr>td:nth-child(2){
+  text-align: left;
+}
