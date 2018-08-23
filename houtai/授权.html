@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,276 +9,143 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/bootstrap-theme.css">
   <link rel="stylesheet" href="css/reset.css">
-<link rel="stylesheet" href="css/spacing.css">
+  <link rel="stylesheet" href="css/spacing.css">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/utils.css">
   <link rel="stylesheet" href="css/public.css">
-  <link rel="stylesheet" href="css/daily_record.css">
+  <link rel="stylesheet" href="css/shouquan.css">
   <title>Document</title>
 </head>
+
 <body class="bg_body">
-<div class="container-fluid">
-  <aside class="clearfix">
-    <div class="sidebar clearfix">
-      <div class="container sidebar_container clearfix">
-        <a href="#" class="bar_logo"></a>
-        <ul class="sidebar_top">
-          <li><a href="#"><span class="icon_index"></span></a></li>
-          <li><a href=""><span class="icon_search"></span></a></li>
-          <li><a href=""><span class="icon_log"></span></a></li>
-          <li><a href=""><span class="icon_warnning"></span></a></li>
-        </ul>
-        <ul class="sidebar_bottom">
-          <li><a href="#"><span class="icon_setting"></span></a></li>
-           <li><a href=""><span class="icon_member"></span></a></li>
-           <li><a href=""><span class="icon_power"></span></a></li>
-        </ul>
-      </div>      
-    </div>
-  </aside>
-  <div class="content-wrapper ">
-    <div class="page_title">
-      <h1>授权</h1>
-    </div>
-    <div class="box intro_box  bg_fff">
-      <p class="intro_txt">你可以使用自定义的匹配规则来将输入的日志消息路由到日志流，同一条日志消息也可以路由到多个日志流</p>
-      <a class="btn lg_btn create_btn gr_btn">创建日志流</a>
-    </div>
-    <div class="height20"></div>
-    <div class="mian  bg_fff">
-      <div class="box">
-        <div>
-          <from>
-            <div class="input_group">
-              <span class="input_group_tit" >过滤日志流</span>
-              <input type="text" class="input_group_input border"  >
-              <button class="sm_btn btn filter bl_btn" type="submit">过滤</button>
-              <button class="sm_btn btn grey_btn reset" type="reset">重置</button>
-            </div>
-          </from>
-          <section class="clearfix">
-            <div class="col_left record_summary">
-              <h2>F5性能日志流</h2>
-              <p>F5过滤日志流</p>
-              <p class="summary_beizhu">
-                <span>4条日志消息/秒</span>
-                <span>已配置 2 条规则</span>
-                <a href="#">显示</a>
-                <a href="#">日志流规则</a>
-              </p>
-            </div>
-            <div class="col_right">
-                <a href="#" class="btn btn-group gr_btn sm_btn">编辑规则</a>
-                <a href="#" class="btn btn-group bl_btn sm_btn">管理输出</a>
-                <a href="#" class="btn btn-group or_btn sm_btn">关闭日志流</a>
-                <div class="dropdown dropdown_01">
-                  <button class="btn btn_more dropdown-toggle border" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
-                    更多操作
-                    <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu more_dropdown_menu" aria-labelledby="dropdownMenu2">
-                    <li>
-                      <a href="#">其他操作</a>
-                    </li>
-                    <li>
-                      <a href="#">其他操作</a>
-                    </li>
-                  </ul>
-                </div>
-            </div>
-          </section>
-          <section class="clearfix">
-            <div class="col_left record_summary">
-              <h2>F5性能日志流</h2>
-              <p>F5过滤日志流</p>
-              <p  class="summary_beizhu">
-                <span>4条日志消息/秒</span>
-                <span>已配置 2 条规则</span>
-                <a href="#">显示</a>
-                <a href="#">日志流规则</a>
-              </p>
-            </div>
-            <div class="col_right">
-              <a href="#" class="btn btn-group gr_btn sm_btn">编辑规则</a>
-              <a href="#" class="btn btn-group bl_btn sm_btn">管理输出</a>
-              <a href="#" class="btn btn-group or_btn sm_btn">关闭日志流</a>
-              <div class="dropdown dropdown_01">
-                <button class="btn btn_more dropdown-toggle border" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-                  aria-expanded="false">
-                  更多操作
-                  <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu more_dropdown_menu" aria-labelledby="dropdownMenu2">
-                  <li>
-                    <a href="#">其他操作</a>
-                  </li>
-                  <li>
-                    <a href="#">其他操作</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </section>
-          <section class="clearfix">
-            <div class="col_left record_summary">
-              <h2>F5性能日志流</h2>
-              <p>F5过滤日志流</p>
-              <p  class="summary_beizhu">
-                <span>4条日志消息/秒</span>
-                <span>已配置 2 条规则</span>
-                <a href="#">显示</a>
-                <a href="#">日志流规则</a>
-              </p>
-            </div>
-            <div class="col_right">
-              <a href="#" class="btn btn-group gr_btn sm_btn">编辑规则</a>
-              <a href="#" class="btn btn-group bl_btn sm_btn">管理输出</a>
-              <a href="#" class="btn btn-group or_btn sm_btn">关闭日志流</a>
-              <div class="dropdown dropdown_01">
-                <button class="btn btn_more dropdown-toggle border" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-                  aria-expanded="false">
-                  更多操作
-                  <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu more_dropdown_menu" aria-labelledby="dropdownMenu2">
-                  <li>
-                    <a href="#">其他操作</a>
-                  </li>
-                  <li>
-                    <a href="#">其他操作</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </section>
-                    <section class="clearfix">
-                      <div class="col_left record_summary">
-                        <h2>F5性能日志流</h2>
-                        <p>F5过滤日志流</p>
-                        <p class="summary_beizhu">
-                          <span>4条日志消息/秒</span>
-                          <span>已配置 2 条规则</span>
-                          <a href="#">显示</a>
-                          <a href="#">日志流规则</a>
-                        </p>
-                      </div>
-                      <div class="col_right">
-                        <a href="#" class="btn btn-group gr_btn sm_btn">编辑规则</a>
-                        <a href="#" class="btn btn-group bl_btn sm_btn">管理输出</a>
-                        <a href="#" class="btn btn-group or_btn sm_btn">关闭日志流</a>
-                        <div class="dropdown dropdown_01">
-                          <button class="btn btn_more dropdown-toggle border" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">
-                            更多操作
-                            <span class="caret"></span>
-                          </button>
-                          <ul class="dropdown-menu more_dropdown_menu" aria-labelledby="dropdownMenu2">
-                            <li>
-                              <a href="#">其他操作</a>
-                            </li>
-                            <li>
-                              <a href="#">其他操作</a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </section>
-                              <section class="clearfix">
-                                <div class="col_left record_summary">
-                                  <h2>F5性能日志流</h2>
-                                  <p>F5过滤日志流</p>
-                                  <p class="summary_beizhu">
-                                    <span>4条日志消息/秒</span>
-                                    <span>已配置 2 条规则</span>
-                                    <a href="#">显示</a>
-                                    <a href="#">日志流规则</a>
-                                  </p>
-                                </div>
-                                <div class="col_right">
-                                  <a href="#" class="btn btn-group gr_btn sm_btn">编辑规则</a>
-                                  <a href="#" class="btn btn-group bl_btn sm_btn">管理输出</a>
-                                  <a href="#" class="btn btn-group or_btn sm_btn">关闭日志流</a>
-                                  <div class="dropdown dropdown_01">
-                                    <button class="btn btn_more dropdown-toggle border" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-                                      aria-expanded="false">
-                                      更多操作
-                                      <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu more_dropdown_menu" aria-labelledby="dropdownMenu2">
-                                      <li>
-                                        <a href="#">其他操作</a>
-                                      </li>
-                                      <li>
-                                        <a href="#">其他操作</a>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </div>
-                              </section>
-                                        <section class="clearfix">
-                                          <div class="col_left record_summary">
-                                            <h2>F5性能日志流</h2>
-                                            <p>F5过滤日志流</p>
-                                            <p class="summary_beizhu">
-                                              <span>4条日志消息/秒</span>
-                                              <span>已配置 2 条规则</span>
-                                              <a href="#">显示</a>
-                                              <a href="#">日志流规则</a>
-                                            </p>
-                                          </div>
-                                          <div class="col_right">
-                                            <a href="#" class="btn btn-group gr_btn sm_btn">编辑规则</a>
-                                            <a href="#" class="btn btn-group bl_btn sm_btn">管理输出</a>
-                                            <a href="#" class="btn btn-group or_btn sm_btn">关闭日志流</a>
-                                            <div class="dropdown dropdown_01">
-                                              <button class="btn btn_more dropdown-toggle border" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">
-                                                更多操作
-                                                <span class="caret"></span>
-                                              </button>
-                                              <ul class="dropdown-menu more_dropdown_menu" aria-labelledby="dropdownMenu2">
-                                                <li>
-                                                  <a href="#">其他操作</a>
-                                                </li>
-                                                <li>
-                                                  <a href="#">其他操作</a>
-                                                </li>
-                                              </ul>
-                                            </div>
-                                          </div>
-                                        </section>
-                                                  <section class="clearfix">
-                                                    <div class="col_left record_summary">
-                                                      <h2>F5性能日志流</h2>
-                                                      <p>F5过滤日志流</p>
-                                                      <p class="summary_beizhu">
-                                                        <span>4条日志消息/秒</span>
-                                                        <span>已配置 2 条规则</span>
-                                                        <a href="#">显示</a>
-                                                        <a href="#">日志流规则</a>
-                                                      </p>
-                                                    </div>
-                                                    <div class="col_right">
-                                                      <a href="#" class="btn btn-group gr_btn sm_btn">编辑规则</a>
-                                                      <a href="#" class="btn btn-group bl_btn sm_btn">管理输出</a>
-                                                      <a href="#" class="btn btn-group or_btn sm_btn">关闭日志流</a>
-                                                      <div class="dropdown dropdown_01">
-                                                        <button class="btn btn_more dropdown-toggle border" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-                                                          aria-expanded="false">
-                                                          更多操作
-                                                          <span class="caret"></span>
-                                                        </button>
-                                                        <ul class="dropdown-menu more_dropdown_menu" aria-labelledby="dropdownMenu2">
-                                                          <li>
-                                                            <a href="#">其他操作</a>
-                                                          </li>
-                                                          <li>
-                                                            <a href="#">其他操作</a>
-                                                          </li>
-                                                        </ul>
-                                                      </div>
-                                                    </div>
-                                                  </section>
-                                                  
+  <div class="container-fluid">
+    <aside class="clearfix">
+      <div class="sidebar clearfix">
+        <div class="container sidebar_container clearfix">
+          <a href="#" class="bar_logo"></a>
+          <ul class="sidebar_top">
+            <li>
+              <a href="#">
+                <span class="icon_index"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_search"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_log"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_warnning"></span>
+              </a>
+            </li>
+          </ul>
+          <ul class="sidebar_bottom">
+            <li>
+              <a href="#">
+                <span class="icon_setting"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_member"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_power"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+    <div class="content-wrapper ">
+      <div class="page_title">
+        <h1>授权</h1>
+      </div>
+      <div class="box intro_box  bg_fff">
+        <p class="intro_txt pad10B">您可以在此页面上的查看授权使用情况。</p>
+        <p class="font-size-12 font-grey2">
+          <span>节点 id:9daa2ad9-5487-8aa1-2bf1ebe91d42</span>
+          <span> 授权类型：永久授权</span>
+          <span>授权每日使用限额：50GB</span>
+          <span> 机器码：51678dda39.68a18b42</span>
+          <span> 授权码</span>
+          <i class=" glyphicon glyphicon-edit font-size-14"></i>
+        </p>
+      </div>
+      <div class="height20"></div>
+      <div class="top_box box pad0T pad0B bg_fff">
+        <div class="row panel-layout mrg0B">
+
+          <div class="panel_left panel-box borderR">
+            <p class="font-size-18 font-grey1">当日使用量</p>
+
+          </div>
+          <div class="panel-box panel_right">
+            <p class="font-size-18 font-grey1">当日使用比例</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="height20"></div>
+      <div class="middle_box box bg_fff">
+        <div class="panel-box">
+          <p class="font-size-18 font-grey1">最近七天使用量</p>
+        </div>
+      </div>
+      <div class="height20"></div>
+      <div class="bottom_box box bg_fff">
+        <div class="">
+          <p class="font-size-18 font-grey1 pad20B">历史授权使用情况</p>
+
+          <table class="table table-bordered mrg0B">
+            <thead>
+              <tr>
+                <th>日期</th>
+                <th>当前使用量（GB）</th>
+                <th>超过日限额（GB）</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2018-8-28</td>
+                <td>5.61</td>
+                <td>0.00</td>
+              </tr>
+              <tr>
+                <td>2018-8-28</td>
+                <td>5.61</td>
+                <td>0.00</td>
+              </tr>
+              <tr>
+                <td>2018-8-28</td>
+                <td>5.61</td>
+                <td>0.00</td>
+              </tr>
+              <tr>
+                <td>2018-8-28</td>
+                <td>5.61</td>
+                <td>0.00</td>
+              </tr>
+              <tr>
+                <td>2018-8-28</td>
+                <td>5.61</td>
+                <td>0.00</td>
+              </tr>
+              <tr>
+                <td>2018-8-28</td>
+                <td>5.61</td>
+                <td>0.00</td>
+              </tr>
+            </tbody>
+          </table>
           <nav aria-label="Page navigation" class=" clearfix">
             <ul class="pagination">
               <li>
@@ -317,24 +185,23 @@
               <li>
                 <a href="#" aria-label="Next">
                   <span aria-hidden="true">下一页</span>
-                </a> 
+                </a>
               </li>
               <li>
                 <a href="#" aria-label="End">
-                <span aria-hidden="true">尾页</span>
-              </a>
-            </li>
+                  <span aria-hidden="true">尾页</span>
+                </a>
+              </li>
             </ul>
           </nav>
         </div>
       </div>
     </div>
-    <div class="height20"></div>
   </div>
-</div>
 
 
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
 </body>
+
 </html>

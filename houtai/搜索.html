@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,333 +9,299 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/bootstrap-theme.css">
   <link rel="stylesheet" href="css/reset.css">
-<link rel="stylesheet" href="css/spacing.css">
+  <link rel="stylesheet" href="css/spacing.css">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/utils.css">
   <link rel="stylesheet" href="css/public.css">
-  <link rel="stylesheet" href="css/daily_record.css">
+  <link rel="stylesheet" href="css/searh.css">
   <title>Document</title>
 </head>
+
 <body class="bg_body">
-<div class="container-fluid">
-  <aside class="clearfix">
-    <div class="sidebar clearfix">
-      <div class="container sidebar_container clearfix">
-        <a href="#" class="bar_logo"></a>
-        <ul class="sidebar_top">
-          <li><a href="#"><span class="icon_index"></span></a></li>
-          <li><a href=""><span class="icon_search"></span></a></li>
-          <li><a href=""><span class="icon_log"></span></a></li>
-          <li><a href=""><span class="icon_warnning"></span></a></li>
-        </ul>
-        <ul class="sidebar_bottom">
-          <li><a href="#"><span class="icon_setting"></span></a></li>
-           <li><a href=""><span class="icon_member"></span></a></li>
-           <li><a href=""><span class="icon_power"></span></a></li>
-        </ul>
-      </div>      
-    </div>
-  </aside>
-  <div class="content-wrapper ">
-    <div class="page_title">
-      <h1>搜索</h1>
-    </div>
-    <div class="box intro_box  bg_fff">
-      <p class="intro_txt">你可以使用自定义的匹配规则来将输入的日志消息路由到日志流，同一条日志消息也可以路由到多个日志流</p>
-      <a class="btn lg_btn create_btn gr_btn">创建日志流</a>
-    </div>
-    <div class="height20"></div>
-    <div class="mian  bg_fff">
-      <div class="box">
+  <div class="container-fluid">
+    <aside class="clearfix">
+      <div class="sidebar clearfix">
+        <div class="container sidebar_container clearfix">
+          <a href="#" class="bar_logo"></a>
+          <ul class="sidebar_top">
+            <li>
+              <a href="#">
+                <span class="icon_index"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_search"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_log"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_warnning"></span>
+              </a>
+            </li>
+          </ul>
+          <ul class="sidebar_bottom">
+            <li>
+              <a href="#">
+                <span class="icon_setting"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_member"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="icon_power"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+    <div class="content-wrapper ">
+      <div class="page_title">
+        <h1>搜索</h1>
+      </div>
+      <div class="box intro_box  bg_fff">
         <div>
-          <from>
-            <div class="input_group">
-              <span class="input_group_tit" >过滤日志流</span>
-              <input type="text" class="input_group_input border"  >
-              <button class="sm_btn btn filter bl_btn" type="submit">过滤</button>
-              <button class="sm_btn btn grey_btn reset" type="reset">重置</button>
+          <div class="input-group search_group">
+            <input type="text" class="form-control" aria-label="search" placeholder="搜索最近五分钟">
+            <div class="input-group-btn ">
+              <button type="button" class="btn dropdown-toggle search_btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li>
+                  <a href="#">Action</a>
+                </li>
+                <li>
+                  <a href="#">Another action</a>
+                </li>
+                <li>
+                  <a href="#">Something else here</a>
+                </li>
+                <li>
+                  <a href="#">Separated link</a>
+                </li>
+              </ul>
             </div>
-          </from>
-          <section class="clearfix">
-            <div class="col_left record_summary">
-              <h2>F5性能日志流</h2>
-              <p>F5过滤日志流</p>
-              <p class="summary_beizhu">
-                <span>4条日志消息/秒</span>
-                <span>已配置 2 条规则</span>
-                <a href="#">显示</a>
-                <a href="#">日志流规则</a>
-              </p>
+          </div>
+          <div class="btn_group_right">
+            <div class="btn-group">
+              <button type="button" class="no_update btn font-size-14 font-grey2  dropdown-toggle dropdown-toggle01" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                不更新
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#">日志消息一</a>
+                </li>
+                <li>
+                  <a href="#">日志消息二</a>
+                </li>
+                <li>
+                  <a href="#">日志消息三</a>
+                </li>
+              </ul>
             </div>
-            <div class="col_right">
-                <a href="#" class="btn btn-group gr_btn sm_btn">编辑规则</a>
-                <a href="#" class="btn btn-group bl_btn sm_btn">管理输出</a>
-                <a href="#" class="btn btn-group or_btn sm_btn">关闭日志流</a>
-                <div class="dropdown dropdown_01">
-                  <button class="btn btn_more dropdown-toggle border" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
-                    更多操作
-                    <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu more_dropdown_menu" aria-labelledby="dropdownMenu2">
-                    <li>
-                      <a href="#">其他操作</a>
-                    </li>
-                    <li>
-                      <a href="#">其他操作</a>
-                    </li>
-                  </ul>
-                </div>
+            <div class="btn-group savebtn_group">
+              <button type="button" class="save_btn btn font-size-14 font-grey2 no-shadow dropdown-toggle " data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                已保存的查询
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#">日志消息一</a>
+                </li>
+                <li>
+                  <a href="#">日志消息二</a>
+                </li>
+                <li>
+                  <a href="#">日志消息三</a>
+                </li>
+              </ul>
             </div>
-          </section>
-          <section class="clearfix">
-            <div class="col_left record_summary">
-              <h2>F5性能日志流</h2>
-              <p>F5过滤日志流</p>
-              <p  class="summary_beizhu">
-                <span>4条日志消息/秒</span>
-                <span>已配置 2 条规则</span>
-                <a href="#">显示</a>
-                <a href="#">日志流规则</a>
-              </p>
-            </div>
-            <div class="col_right">
-              <a href="#" class="btn btn-group gr_btn sm_btn">编辑规则</a>
-              <a href="#" class="btn btn-group bl_btn sm_btn">管理输出</a>
-              <a href="#" class="btn btn-group or_btn sm_btn">关闭日志流</a>
-              <div class="dropdown dropdown_01">
-                <button class="btn btn_more dropdown-toggle border" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-                  aria-expanded="false">
-                  更多操作
-                  <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu more_dropdown_menu" aria-labelledby="dropdownMenu2">
-                  <li>
-                    <a href="#">其他操作</a>
-                  </li>
-                  <li>
-                    <a href="#">其他操作</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </section>
-          <section class="clearfix">
-            <div class="col_left record_summary">
-              <h2>F5性能日志流</h2>
-              <p>F5过滤日志流</p>
-              <p  class="summary_beizhu">
-                <span>4条日志消息/秒</span>
-                <span>已配置 2 条规则</span>
-                <a href="#">显示</a>
-                <a href="#">日志流规则</a>
-              </p>
-            </div>
-            <div class="col_right">
-              <a href="#" class="btn btn-group gr_btn sm_btn">编辑规则</a>
-              <a href="#" class="btn btn-group bl_btn sm_btn">管理输出</a>
-              <a href="#" class="btn btn-group or_btn sm_btn">关闭日志流</a>
-              <div class="dropdown dropdown_01">
-                <button class="btn btn_more dropdown-toggle border" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-                  aria-expanded="false">
-                  更多操作
-                  <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu more_dropdown_menu" aria-labelledby="dropdownMenu2">
-                  <li>
-                    <a href="#">其他操作</a>
-                  </li>
-                  <li>
-                    <a href="#">其他操作</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </section>
-                    <section class="clearfix">
-                      <div class="col_left record_summary">
-                        <h2>F5性能日志流</h2>
-                        <p>F5过滤日志流</p>
-                        <p class="summary_beizhu">
-                          <span>4条日志消息/秒</span>
-                          <span>已配置 2 条规则</span>
-                          <a href="#">显示</a>
-                          <a href="#">日志流规则</a>
-                        </p>
-                      </div>
-                      <div class="col_right">
-                        <a href="#" class="btn btn-group gr_btn sm_btn">编辑规则</a>
-                        <a href="#" class="btn btn-group bl_btn sm_btn">管理输出</a>
-                        <a href="#" class="btn btn-group or_btn sm_btn">关闭日志流</a>
-                        <div class="dropdown dropdown_01">
-                          <button class="btn btn_more dropdown-toggle border" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+          </div>
+        </div>
+
+        <div>
+          <div class="input-group lg_btn_group pad20T">
+            <textarea type="text" class="form-control" placeholder="请在此输入搜索条件并按回车。例如（“not found”AND http）或 http_response_code : [ 400 TO 404 ] 或者 error"></textarea>
+            <span class="input-group-btn">
+              <button class="btn lg_search_btn font-size-18" type="button">搜索</button>
+            </span>
+          </div>
+          <!-- /input-group -->
+        </div>
+        <p class="font-size-12 font-grey2 pad10T">在 3个索引上，找到 31，697条日志消息，共用时120ms　检索时间为 2018-08-02 17:25:48</p>
+
+      </div>
+
+      <div class="height20"></div>
+      <div class="mian">
+        <div class="">
+          <div>
+            <div class="tab-cards pad30T">
+              <!-- Nav tabs -->
+              <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class=" active">
+                  <a href="#search_result" aria-controls="home" role="tab" data-toggle="tab">搜索结果</a>
+                </li>
+                <li role="presentation" class="">
+                  <a href="#others" aria-controls="profile" role="tab" data-toggle="tab">类别1</a>
+                </li>
+                <li role="presentation" class="">
+                  <a href="#others" aria-controls="profile" role="tab" data-toggle="tab">类别2</a>
+                </li>
+
+              </ul>
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <!-- 搜索结果 start -->
+                <div role="tabpanel" class="tab-pane active clearfix pad0A" id="search_result">
+                  <div class="col-lg_3 pad20R pad0L">
+                    <div class=" box">
+                      <div class="borderB pad10B">
+                        <div class="btn-group">
+                          <button type="button" class="no_update btn font-size-14 font-grey2  dropdown-toggle dropdown-toggle01" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            不更新
+                            <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a href="#">日志消息一</a>
+                            </li>
+                            <li>
+                              <a href="#">日志消息二</a>
+                            </li>
+                            <li>
+                              <a href="#">日志消息三</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="#" role="button" class="btn sm_btn grey_btn">模式</a>
+                        <a href="#" role="button" class="btn sm_btn grey_btn">保存搜索条件</a>
+                        <div class="btn-group savebtn_group">
+                          <button type="button" class="more_btn btn font-size-14 font-grey2 no-shadow dropdown-toggle " data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
                             更多操作
                             <span class="caret"></span>
                           </button>
-                          <ul class="dropdown-menu more_dropdown_menu" aria-labelledby="dropdownMenu2">
+                          <ul class="dropdown-menu">
                             <li>
-                              <a href="#">其他操作</a>
+                              <a href="#">日志消息一</a>
                             </li>
                             <li>
-                              <a href="#">其他操作</a>
+                              <a href="#">日志消息二</a>
+                            </li>
+                            <li>
+                              <a href="#">日志消息三</a>
                             </li>
                           </ul>
                         </div>
                       </div>
-                    </section>
-                              <section class="clearfix">
-                                <div class="col_left record_summary">
-                                  <h2>F5性能日志流</h2>
-                                  <p>F5过滤日志流</p>
-                                  <p class="summary_beizhu">
-                                    <span>4条日志消息/秒</span>
-                                    <span>已配置 2 条规则</span>
-                                    <a href="#">显示</a>
-                                    <a href="#">日志流规则</a>
-                                  </p>
-                                </div>
-                                <div class="col_right">
-                                  <a href="#" class="btn btn-group gr_btn sm_btn">编辑规则</a>
-                                  <a href="#" class="btn btn-group bl_btn sm_btn">管理输出</a>
-                                  <a href="#" class="btn btn-group or_btn sm_btn">关闭日志流</a>
-                                  <div class="dropdown dropdown_01">
-                                    <button class="btn btn_more dropdown-toggle border" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-                                      aria-expanded="false">
-                                      更多操作
-                                      <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu more_dropdown_menu" aria-labelledby="dropdownMenu2">
-                                      <li>
-                                        <a href="#">其他操作</a>
-                                      </li>
-                                      <li>
-                                        <a href="#">其他操作</a>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </div>
-                              </section>
-                                        <section class="clearfix">
-                                          <div class="col_left record_summary">
-                                            <h2>F5性能日志流</h2>
-                                            <p>F5过滤日志流</p>
-                                            <p class="summary_beizhu">
-                                              <span>4条日志消息/秒</span>
-                                              <span>已配置 2 条规则</span>
-                                              <a href="#">显示</a>
-                                              <a href="#">日志流规则</a>
-                                            </p>
-                                          </div>
-                                          <div class="col_right">
-                                            <a href="#" class="btn btn-group gr_btn sm_btn">编辑规则</a>
-                                            <a href="#" class="btn btn-group bl_btn sm_btn">管理输出</a>
-                                            <a href="#" class="btn btn-group or_btn sm_btn">关闭日志流</a>
-                                            <div class="dropdown dropdown_01">
-                                              <button class="btn btn_more dropdown-toggle border" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">
-                                                更多操作
-                                                <span class="caret"></span>
-                                              </button>
-                                              <ul class="dropdown-menu more_dropdown_menu" aria-labelledby="dropdownMenu2">
-                                                <li>
-                                                  <a href="#">其他操作</a>
-                                                </li>
-                                                <li>
-                                                  <a href="#">其他操作</a>
-                                                </li>
-                                              </ul>
-                                            </div>
-                                          </div>
-                                        </section>
-                                                  <section class="clearfix">
-                                                    <div class="col_left record_summary">
-                                                      <h2>F5性能日志流</h2>
-                                                      <p>F5过滤日志流</p>
-                                                      <p class="summary_beizhu">
-                                                        <span>4条日志消息/秒</span>
-                                                        <span>已配置 2 条规则</span>
-                                                        <a href="#">显示</a>
-                                                        <a href="#">日志流规则</a>
-                                                      </p>
-                                                    </div>
-                                                    <div class="col_right">
-                                                      <a href="#" class="btn btn-group gr_btn sm_btn">编辑规则</a>
-                                                      <a href="#" class="btn btn-group bl_btn sm_btn">管理输出</a>
-                                                      <a href="#" class="btn btn-group or_btn sm_btn">关闭日志流</a>
-                                                      <div class="dropdown dropdown_01">
-                                                        <button class="btn btn_more dropdown-toggle border" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-                                                          aria-expanded="false">
-                                                          更多操作
-                                                          <span class="caret"></span>
-                                                        </button>
-                                                        <ul class="dropdown-menu more_dropdown_menu" aria-labelledby="dropdownMenu2">
-                                                          <li>
-                                                            <a href="#">其他操作</a>
-                                                          </li>
-                                                          <li>
-                                                            <a href="#">其他操作</a>
-                                                          </li>
-                                                        </ul>
-                                                      </div>
-                                                    </div>
-                                                  </section>
-                                                  
-          <nav aria-label="Page navigation" class=" clearfix">
-            <ul class="pagination">
-              <li>
-                <a href="#" aria-label="First">
-                  <span aria-hidden="true">首页</span>
-                </a>
-              </li>
-              <li>
-                <a href="#" aria-label="Previous">
-                  <span aria-hidden="true">上一页</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">1</a>
-              </li>
-              <li>
-                <a href="#">2</a>
-              </li>
-              <li>
-                <a href="#">3</a>
-              </li>
-              <li>
-                <a href="#">4</a>
-              </li>
-              <li>
-                <a href="#">5</a>
-              </li>
-              <li>
-                <a href="#">6</a>
-              </li>
-              <li>
-                <a href="#">7</a>
-              </li>
-              <li>
-                <a href="#">8</a>
-              </li>
-              <li>
-                <a href="#" aria-label="Next">
-                  <span aria-hidden="true">下一页</span>
-                </a> 
-              </li>
-              <li>
-                <a href="#" aria-label="End">
-                <span aria-hidden="true">尾页</span>
-              </a>
-            </li>
-            </ul>
-          </nav>
+                      <div class="tab_02">
+<ul class="nav nav-tabs" role="tablist">
+  <li  role="presentation" class=" active">
+    <a href="#ziduan"  aria-controls="home" role="tab" data-toggle="tab">字段</a>
+  </li>
+  <li>
+    <a href="#zhuangshiqi" aria-controls="home" role="tab" data-toggle="tab">装饰器</a>
+  </li>
+</ul>
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <!-- 字段 -->
+                <div role="tabpanel" class="tab-pane active clearfix pad0A" id="search_result"></div>
+<!-- 装饰器 -->
+                <div role="tabpanel" class="tab-pane active clearfix pad0A" id="search_result"></div>
+                </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="box  col-lg_9">
+                    <p class="font-grey1 font-size-18">图表</p>
+                  </div>
+                </div>
+                <!-- 搜索结果 end -->
+                <!-- 其他1 start -->
+                <div role="tabpanel" class="tab-pane " id="others">
+
+
+                </div>
+                <!-- 其他1 end -->
+                <!-- 其他2 start -->
+                <div role="tabpanel" class="tab-pane " id="others2">
+
+
+                </div>
+                <!-- 其他2end -->
+                <nav aria-label="Page navigation" class=" clearfix">
+                  <ul class="pagination">
+                    <li>
+                      <a href="#" aria-label="First">
+                        <span aria-hidden="true">首页</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" aria-label="Previous">
+                        <span aria-hidden="true">上一页</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">1</a>
+                    </li>
+                    <li>
+                      <a href="#">2</a>
+                    </li>
+                    <li>
+                      <a href="#">3</a>
+                    </li>
+                    <li>
+                      <a href="#">4</a>
+                    </li>
+                    <li>
+                      <a href="#">5</a>
+                    </li>
+                    <li>
+                      <a href="#">6</a>
+                    </li>
+                    <li>
+                      <a href="#">7</a>
+                    </li>
+                    <li>
+                      <a href="#">8</a>
+                    </li>
+                    <li>
+                      <a href="#" aria-label="Next">
+                        <span aria-hidden="true">下一页</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" aria-label="End">
+                        <span aria-hidden="true">尾页</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="height20"></div>
-  </div>
-</div>
-
-
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.js"></script>
 </body>
+
 </html>

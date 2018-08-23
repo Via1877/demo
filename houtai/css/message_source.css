@@ -70,7 +70,7 @@ padding-bottom:7px;
     position:absolute;
     right: 25px;
     top: 50%;
-    margin-top: -6px;
+    margin-top: -12px;
 }
 .search_group .form-control{
   height:30px;
@@ -78,6 +78,10 @@ padding-bottom:7px;
 .search_group .dropdown-menu{
   position:absolute;
 
+}
+.search_group>input[placeholder="search"] {
+  border-top-right-radius: 4px!important;
+  border-bottom-right-radius: 4px !important;
 }
 .dropdown-menu-right{
   right:-24px;
@@ -90,7 +94,54 @@ padding-bottom:7px;
   background: url(../images/icon_zoomIn.png) no-repeat center;
 }
 .table_box{
-  width:80%;
   height:330px;
   overflow: scroll;
+}
+.panel-box {
+  vertical-align: top;
+}
+.row {
+  margin: 0;
+}
+.panel_left{
+  display: inline-block;
+  width:25%;
+}
+.panel_right{
+  float: right;
+  width:74%;
+}
+.table>tbody>tr:first-child{
+  background-color: #fbfbfb;
+}
+.color_block{
+  display: inline-table;
+  vertical-align: middle;
+  height:16px;
+  width:16px;
+  margin-top:-3px;
+  border-radius:4px ;
+  -webkit-border-radius:4px ;
+  -moz-border-radius:4px ;
+  -ms-border-radius:4px ;
+  -o-border-radius:4px ;
+  margin-right:10px;                                                                                                                                                                            
+}
+.table>thead>tr>th,
+.table>tbody>tr>th,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>tbody>tr>td,
+.table>tfoot>tr>td{
+  vertical-align:middle;
+  text-align: center;
+}
+.table>thead>tr>th:first-child,
+.table>tbody>tr>th:first-child,
+.table>tfoot>tr>th:first-child,
+.table>thead>tr>td:first-child,
+.table>tbody>tr>td:first-child,
+.table>tfoot>tr>td:first-child {
+text-align: left;
+padding-left:20px;
 }
