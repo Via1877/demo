@@ -19,6 +19,7 @@
 
 <body class="bg_body">
   <div class="container-fluid">
+    <!-- 侧边栏 -->
     <aside class="clearfix">
       <div class="sidebar clearfix">
         <div class="container sidebar_container clearfix">
@@ -65,10 +66,14 @@
         </div>
       </div>
     </aside>
+    <!-- 侧边栏 -->
+    <!-- 主体 -->
     <div class="content-wrapper ">
+      <!-- 标题 -->
       <div class="page_title">
         <h1>搜索</h1>
       </div>
+      <!-- 标题 -->
       <div class="box intro_box  bg_fff">
         <div>
           <div class="input-group search_group">
@@ -152,23 +157,23 @@
           <div>
             <div class="tab-cards pad30T">
               <!-- Nav tabs -->
-              <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class=" active">
+              <ul class="nav nav-tabs " role="tablist">
+                <li role="presentation" class="">
                   <a href="#search_result" aria-controls="home" role="tab" data-toggle="tab">搜索结果</a>
                 </li>
-                <li role="presentation" class="">
+                <li role="presentation" class=" ">
                   <a href="#others" aria-controls="profile" role="tab" data-toggle="tab">类别1</a>
                 </li>
-                <li role="presentation" class="">
-                  <a href="#others" aria-controls="profile" role="tab" data-toggle="tab">类别2</a>
+                <li role="presentation" class="active">
+                  <a href="#others2" aria-controls="profile" role="tab" data-toggle="tab">类别2</a>
                 </li>
 
               </ul>
               <!-- Tab panes -->
-              <div class="tab-content">
+              <div class="tab-content mrg30T">
                 <!-- 搜索结果 start -->
-                <div role="tabpanel" class="tab-pane active clearfix pad0A" id="search_result">
-                  <div class="col-lg_3 pad20R pad0L">
+                <div role="tabpanel" class="tab-pane  clearfix pad0A" id="search_result">
+                  <div class="col-lg_3 mrg20R pad0L bg_fff">
                     <div class=" box">
                       <div class="borderB pad10B">
                         <div class="btn-group">
@@ -210,98 +215,1288 @@
                           </ul>
                         </div>
                       </div>
-                      <div class="tab_02">
-<ul class="nav nav-tabs" role="tablist">
-  <li  role="presentation" class=" active">
-    <a href="#ziduan"  aria-controls="home" role="tab" data-toggle="tab">字段</a>
-  </li>
-  <li>
-    <a href="#zhuangshiqi" aria-controls="home" role="tab" data-toggle="tab">装饰器</a>
-  </li>
-</ul>
-              <!-- Tab panes -->
-              <div class="tab-content">
-                <!-- 字段 -->
-                <div role="tabpanel" class="tab-pane active clearfix pad0A" id="search_result"></div>
-<!-- 装饰器 -->
-                <div role="tabpanel" class="tab-pane active clearfix pad0A" id="search_result"></div>
-                </div>
+                      <div class="tab_02 pad25T">
+                        <ul class="nav nav-tabs" role="tablist">
+                          <li role="presentation" class=" active">
+                            <a href="#ziduan" aria-controls="home" role="tab" data-toggle="tab">字段</a>
+                          </li>
+                          <li>
+                            <a href="#zhuangshiqi" aria-controls="home" role="tab" data-toggle="tab">装饰器</a>
+                          </li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content mrg10T">
+                          <!-- 字段 -->
+                          <div role="tabpanel" class="tab-pane active clearfix pad0A" id="ziduan">
+                            <div class="xs_btn_group">
+                              <div class="btn-group">
+                                <a href="#" role="button" class="btn font-size-12">默认</a>
+                                <a href="#" role="button" class="btn font-size-12">全部</a>
+                                <a href="#" role="button" class="btn font-size-12">无</a>
+                              </div>
+                              <a href="#" role="button" class="btn font-size-12">过滤字段</a>
+                            </div>
+                            <div class="pad20T">
+                              <div class="panel-group" id="accordion01" role="tablist" aria-multiselectable="false">
+                                <div class="item">
+                                  <div class="panel-heading" role="tab" id="heading01">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion01" href="#collapse01" aria-expanded="false" aria-controls="collapse01">
+                                      <i class="plusicon"></i>_time
+                                    </a>
+                                  </div>
+                                  <div id="collapse01" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading01">
+                                    <div class="panel-body">
+                                      <ul>
+                                        <li>
+                                          <a href="#">地图</a>
+                                        </li>
+                                        <li>
+                                          <a href="#">快速值</a>
+                                        </li>
+                                        <li>
+                                          <a href="#">快速值</a>
+                                        </li>
+                                        <li>
+                                          <a href="#">快速值</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="item">
+                                  <div class="panel-heading" role="tab" id="heading02">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion02" href="#collapse02" aria-expanded="false"
+                                      aria-controls="collapse02">
+                                      <i class="plusicon"></i>all_dst_ip_geolocation
+                                    </a>
+                                  </div>
+                                  <div id="collapse02" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading02">
+                                    <div class="panel-body">
+                                      <ul>
+                                        <li>
+                                          <a href="#">地图</a>
+                                        </li>
+                                        <li>
+                                          <a href="#">快速值</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="item">
+                                  <div class="panel-heading" role="tab" id="heading03">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion03" href="#collapse03" aria-expanded="false"
+                                      aria-controls="collapse03">
+                                      <i class="plusicon"></i>all_dst_ip_name
+                                    </a>
+                                  </div>
+                                  <div id="collapse03" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading03">
+                                    <div class="panel-body">
+                                      <ul>
+                                        <li>
+                                          <a href="#">地图</a>
+                                        </li>
+                                        <li>
+                                          <a href="#">快速值</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="pad10T">
+                              <p class="pad10B font-grey2">显示
+                                <a href="#" class="font-blue">当前页</a>或
+                                <a href="#" class="font-blue">所有</a>的字段</p>
+                              <input type="checkbox" name id="light" style="vertical-align:top;margin-top:5px;">
+                              <label for="light" class="font-size-12 font-grey2 font-normal">高亮显示结果</label>
+                            </div>
+                          </div>
+                          <!-- 装饰器 -->
+                          <div role="tabpanel" class="tab-pane clearfix pad0A" id="zhuangshiqi">
+                            <div class="xs_btn_group">
+                              <div class="btn-group">
+                                <a href="#" role="button" class="btn font-size-12">默认</a>
+                                <a href="#" role="button" class="btn font-size-12">全部</a>
+                                <a href="#" role="button" class="btn font-size-12">无</a>
+                              </div>
+                              <a href="#" role="button" class="btn font-size-12">过滤字段</a>
+                            </div>
+                            <div class="pad20T">
+                              <div class="panel-group" id="accordion01" role="tablist" aria-multiselectable="false">
+                                <div class="item">
+                                  <div class="panel-heading" role="tab" id="heading01">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion01" href="#collapse01" aria-expanded="false" aria-controls="collapse01">
+                                      <i class="plusicon"></i>_time
+                                    </a>
+                                  </div>
+                                  <div id="collapse01" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading01">
+                                    <div class="panel-body">
+                                      <ul>
+                                        <li>
+                                          <a href="#">地图</a>
+                                        </li>
+                                        <li>
+                                          <a href="#">快速值</a>
+                                        </li>
+                                        <li>
+                                          <a href="#">快速值</a>
+                                        </li>
+                                        <li>
+                                          <a href="#">快速值</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="item">
+                                  <div class="panel-heading" role="tab" id="heading02">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion02" href="#collapse02" aria-expanded="false"
+                                      aria-controls="collapse02">
+                                      <i class="plusicon"></i>all_dst_ip_geolocation
+                                    </a>
+                                  </div>
+                                  <div id="collapse02" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading02">
+                                    <div class="panel-body">
+                                      <ul>
+                                        <li>
+                                          <a href="#">地图</a>
+                                        </li>
+                                        <li>
+                                          <a href="#">快速值</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="item">
+                                  <div class="panel-heading" role="tab" id="heading03">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion03" href="#collapse03" aria-expanded="false"
+                                      aria-controls="collapse03">
+                                      <i class="plusicon"></i>all_dst_ip_name
+                                    </a>
+                                  </div>
+                                  <div id="collapse03" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading03">
+                                    <div class="panel-body">
+                                      <ul>
+                                        <li>
+                                          <a href="#">地图</a>
+                                        </li>
+                                        <li>
+                                          <a href="#">快速值</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="pad10T">
+                              <p class="pad10B font-grey2">显示
+                                <a href="#" class="font-blue">当前页</a>或
+                                <a href="#" class="font-blue">所有</a>的字段</p>
+                              <input type="checkbox" name id="light" style="vertical-align:top;margin-top:5px;">
+                              <label for="light" class="font-size-12 font-grey2 font-normal">高亮显示结果</label>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
 
                   </div>
+                  <div class="col-lg_9">
+                    <div class="box chart  bg_fff">
+                      <p class="font-grey1 font-size-18">图表</p>
+                    </div>
+                    <div class="box record mrg20T  bg_fff">
+                      <p class="font-grey1 font-size-18 pad20B">日志</p>
+                      <div>
+                        <ul class="lists_02">
+                          <li class="pad20T pad20B borderB">
+                            <span id="date" class="font-size-14 font-grey3 mrg5R">时间戳
+                              <span class="btn_group triangle_group">
+                                <a href="#" role="button" class="">
+                                  <i class="triangle-top font-grey1 "></i>
+                                </a>
+                                <a href="#" role="button" class="">
+                                  <i class="triangle-bottom font-grey1"></i>
+                                </a>
+                              </span>
+                            </span>
+                            <span id="source" class="font-size-14 font-grey3">source
+                              <span class="btn_group triangle_group">
+                                <a href="#" role="button" class="">
+                                  <i class="triangle-top font-grey1 "></i>
+                                </a>
+                                <a href="#" role="button" class="">
+                                  <i class="triangle-bottom font-grey1"></i>
+                                </a>
+                              </span>
+                            </span>
+                            <div class="btn_group_right">
+                              <a href="#">
+                                <i class="outicon"></i>
+                              </a>
+                              <a href="#">
+                                <i class="inicon"></i>
+                              </a>
+                            </div>
+                          </li>
+                          <li class="pad20T pad20B borderB">
+                            <p class="font-size-12 font-grey3 pad10B">
+                              <a href="#">
+                                <span class="mrg20R">2018-08-02</span>
+                                <span>182.92.192.147</span>
+                              </a>
+                            </p>
+                            <p class="font-size-12 font-blue">
+                              <span class="pad5R">2018-08-02 18:25:52</span>
+                              <span class="pad5R">all_src_ip=26.5.0.3</span>
+                              <span class="pad5R">all_dst_ip=18.5.255.14</span>
+                              <span class="pad5R">all_dst_ip=neme=党校网</span>
+                              <span class="pad5R">爬取网页</span>
+                            </p>
+                          </li>
+                          <li class="pad20T pad20B borderB">
+                            <p class="font-size-12 font-grey3 pad10B">
+                              <a href="#">
+                                <span class="mrg20R">2018-08-02</span>
+                                <span>182.92.192.147</span>
+                              </a>
+                            </p>
+                            <p class="font-size-12 font-blue">
+                              <span class="pad5R">2018-08-02 18:25:52</span>
+                              <span class="pad5R">all_src_ip=26.5.0.3</span>
+                              <span class="pad5R">all_dst_ip=18.5.255.14</span>
+                              <span class="pad5R">all_dst_ip=neme=党校网</span>
+                              <span class="pad5R">爬取网页</span>
+                            </p>
+                          </li>
+                          <li class="pad20T pad20B borderB">
+                            <p class="font-size-12 font-grey3 pad10B">
+                              <a href="#">
+                                <span class="mrg20R">2018-08-02</span>
+                                <span>182.92.192.147</span>
+                              </a>
+                            </p>
+                            <p class="font-size-12 font-blue">
+                              <span class="pad5R">2018-08-02 18:25:52</span>
+                              <span class="pad5R">all_src_ip=26.5.0.3</span>
+                              <span class="pad5R">all_dst_ip=18.5.255.14</span>
+                              <span class="pad5R">all_dst_ip=neme=党校网</span>
+                              <span class="pad5R">爬取网页</span>
+                            </p>
+                          </li>
+                          <li class="pad20T pad20B borderB">
+                            <p class="font-size-12 font-grey3 pad10B">
+                              <a href="#">
+                                <span class="mrg20R">2018-08-02</span>
+                                <span>182.92.192.147</span>
+                              </a>
+                            </p>
+                            <p class="font-size-12 font-blue">
+                              <span class="pad5R">2018-08-02 18:25:52</span>
+                              <span class="pad5R">all_src_ip=26.5.0.3</span>
+                              <span class="pad5R">all_dst_ip=18.5.255.14</span>
+                              <span class="pad5R">all_dst_ip=neme=党校网</span>
+                              <span class="pad5R">爬取网页</span>
+                            </p>
+                          </li>
+                          <li class="pad20T pad20B borderB">
+                            <p class="font-size-12 font-grey3 pad10B">
+                              <a href="#">
+                                <span class="mrg20R">2018-08-02</span>
+                                <span>182.92.192.147</span>
+                              </a>
+                            </p>
+                            <p class="font-size-12 font-blue">
+                              <span class="pad5R">2018-08-02 18:25:52</span>
+                              <span class="pad5R">all_src_ip=26.5.0.3</span>
+                              <span class="pad5R">all_dst_ip=18.5.255.14</span>
+                              <span class="pad5R">all_dst_ip=neme=党校网</span>
+                              <span class="pad5R">爬取网页</span>
+                            </p>
+                          </li>
+                          <li class="pad20T pad20B borderB">
+                            <p class="font-size-12 font-grey3 pad10B">
+                              <a href="#">
+                                <span class="mrg20R">2018-08-02</span>
+                                <span>182.92.192.147</span>
+                              </a>
+                            </p>
+                            <p class="font-size-12 font-blue">
+                              <span class="pad5R">2018-08-02 18:25:52</span>
+                              <span class="pad5R">all_src_ip=26.5.0.3</span>
+                              <span class="pad5R">all_dst_ip=18.5.255.14</span>
+                              <span class="pad5R">all_dst_ip=neme=党校网</span>
+                              <span class="pad5R">爬取网页</span>
+                            </p>
+                          </li>
+                          <li class="pad20T pad20B borderB">
+                            <p class="font-size-12 font-grey3 pad10B">
+                              <a href="#">
+                                <span class="mrg20R">2018-08-02</span>
+                                <span>182.92.192.147</span>
+                              </a>
+                            </p>
+                            <p class="font-size-12 font-blue">
+                              <span class="pad5R">2018-08-02 18:25:52</span>
+                              <span class="pad5R">all_src_ip=26.5.0.3</span>
+                              <span class="pad5R">all_dst_ip=18.5.255.14</span>
+                              <span class="pad5R">all_dst_ip=neme=党校网</span>
+                              <span class="pad5R">爬取网页</span>
+                            </p>
+                          </li>
+                          <li class="pad20T pad20B borderB">
+                            <p class="font-size-12 font-grey3 pad10B">
+                              <a href="#">
+                                <span class="mrg20R">2018-08-02</span>
+                                <span>182.92.192.147</span>
+                              </a>
+                            </p>
+                            <p class="font-size-12 font-blue">
+                              <span class="pad5R">2018-08-02 18:25:52</span>
+                              <span class="pad5R">all_src_ip=26.5.0.3</span>
+                              <span class="pad5R">all_dst_ip=18.5.255.14</span>
+                              <span class="pad5R">all_dst_ip=neme=党校网</span>
+                              <span class="pad5R">爬取网页</span>
+                            </p>
+                          </li>
+                          <li class="pad20T pad20B borderB">
+                            <p class="font-size-12 font-grey3 pad10B">
+                              <a href="#">
+                                <span class="mrg20R">2018-08-02</span>
+                                <span>182.92.192.147</span>
+                              </a>
+                            </p>
+                            <p class="font-size-12 font-blue">
+                              <span class="pad5R">2018-08-02 18:25:52</span>
+                              <span class="pad5R">all_src_ip=26.5.0.3</span>
+                              <span class="pad5R">all_dst_ip=18.5.255.14</span>
+                              <span class="pad5R">all_dst_ip=neme=党校网</span>
+                              <span class="pad5R">爬取网页</span>
+                            </p>
+                          </li>
+                          <li class="pad20T pad20B borderB">
+                            <p class="font-size-12 font-grey3 pad10B">
+                              <a href="#">
+                                <span class="mrg20R">2018-08-02</span>
+                                <span>182.92.192.147</span>
+                              </a>
+                            </p>
+                            <p class="font-size-12 font-blue">
+                              <span class="pad5R">2018-08-02 18:25:52</span>
+                              <span class="pad5R">all_src_ip=26.5.0.3</span>
+                              <span class="pad5R">all_dst_ip=18.5.255.14</span>
+                              <span class="pad5R">all_dst_ip=neme=党校网</span>
+                              <span class="pad5R">爬取网页</span>
+                            </p>
+                          </li>
+                          <li class="pad20T pad20B borderB">
+                            <p class="font-size-12 font-grey3 pad10B">
+                              <a href="#">
+                                <span class="mrg20R">2018-08-02</span>
+                                <span>182.92.192.147</span>
+                              </a>
+                            </p>
+                            <p class="font-size-12 font-blue">
+                              <span class="pad5R">2018-08-02 18:25:52</span>
+                              <span class="pad5R">all_src_ip=26.5.0.3</span>
+                              <span class="pad5R">all_dst_ip=18.5.255.14</span>
+                              <span class="pad5R">all_dst_ip=neme=党校网</span>
+                              <span class="pad5R">爬取网页</span>
+                            </p>
+                          </li>
+                          <li class="pad20T pad20B borderB">
+                            <p class="font-size-12 font-grey3 pad10B">
+                              <a href="#">
+                                <span class="mrg20R">2018-08-02</span>
+                                <span>182.92.192.147</span>
+                              </a>
+                            </p>
+                            <p class="font-size-12 font-blue">
+                              <span class="pad5R">2018-08-02 18:25:52</span>
+                              <span class="pad5R">all_src_ip=26.5.0.3</span>
+                              <span class="pad5R">all_dst_ip=18.5.255.14</span>
+                              <span class="pad5R">all_dst_ip=neme=党校网</span>
+                              <span class="pad5R">爬取网页</span>
+                            </p>
+                          </li>
+                          <li class="pad20T pad20B borderB">
+                            <p class="font-size-12 font-grey3 pad10B">
+                              <a href="#">
+                                <span class="mrg20R">2018-08-02</span>
+                                <span>182.92.192.147</span>
+                              </a>
+                            </p>
+                            <p class="font-size-12 font-blue">
+                              <span class="pad5R">2018-08-02 18:25:52</span>
+                              <span class="pad5R">all_src_ip=26.5.0.3</span>
+                              <span class="pad5R">all_dst_ip=18.5.255.14</span>
+                              <span class="pad5R">all_dst_ip=neme=党校网</span>
+                              <span class="pad5R">爬取网页</span>
+                            </p>
+                          </li>
+                        </ul>
 
-                  <div class="box  col-lg_9">
-                    <p class="font-grey1 font-size-18">图表</p>
+                        <nav aria-label="Page navigation" class=" clearfix">
+                          <ul class="pagination">
+                            <li>
+                              <a href="#" aria-label="First">
+                                <span aria-hidden="true">首页</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">上一页</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">1</a>
+                            </li>
+                            <li>
+                              <a href="#">2</a>
+                            </li>
+                            <li>
+                              <a href="#">3</a>
+                            </li>
+                            <li>
+                              <a href="#">4</a>
+                            </li>
+                            <li>
+                              <a href="#">5</a>
+                            </li>
+                            <li>
+                              <a href="#">6</a>
+                            </li>
+                            <li>
+                              <a href="#">7</a>
+                            </li>
+                            <li>
+                              <a href="#">8</a>
+                            </li>
+                            <li>
+                              <a href="#" aria-label="Next">
+                                <span aria-hidden="true">下一页</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" aria-label="End">
+                                <span aria-hidden="true">尾页</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <!-- 搜索结果 end -->
                 <!-- 其他1 start -->
-                <div role="tabpanel" class="tab-pane " id="others">
+                <div role="tabpanel" class="tab-pane clearfix pad0A " id="others">
+                  <div class="col-lg_3 mrg20R pad0L bg_fff">
+                    <div class="box">
+                      <div class="borderB pad10B">
+                        <div class="btn-group">
+                          <button type="button" class="no_update btn font-size-14 font-grey2  dropdown-toggle dropdown-toggle01" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            不更新
+                            <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a href="#">日志消息一</a>
+                            </li>
+                            <li>
+                              <a href="#">日志消息二</a>
+                            </li>
+                            <li>
+                              <a href="#">日志消息三</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="#" role="button" class="btn sm_btn grey_btn">模式</a>
+                        <a href="#" role="button" class="btn sm_btn grey_btn">保存搜索条件</a>
+                        <div class="btn-group savebtn_group">
+                          <button type="button" class="more_btn btn font-size-14 font-grey2 no-shadow dropdown-toggle " data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            更多操作
+                            <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a href="#">日志消息一</a>
+                            </li>
+                            <li>
+                              <a href="#">日志消息二</a>
+                            </li>
+                            <li>
+                              <a href="#">日志消息三</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="tab_02 pad25T">
+                        <ul class="nav nav-tabs" role="tablist">
+                          <li role="presentation" class=" active">
+                            <a href="#ziduan" aria-controls="home" role="tab" data-toggle="tab">字段</a>
+                          </li>
+                          <li>
+                            <a href="#zhuangshiqi" aria-controls="home" role="tab" data-toggle="tab">装饰器</a>
+                          </li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content mrg10T">
+                          <!-- 字段 -->
+                          <div role="tabpanel" class="tab-pane active clearfix pad0A active" id="ziduan">
+                            <div class="xs_btn_group">
+                              <div class="btn-group">
+                                <a href="#" role="button" class="btn font-size-12">默认</a>
+                                <a href="#" role="button" class="btn font-size-12">全部</a>
+                                <a href="#" role="button" class="btn font-size-12">无</a>
+                              </div>
+                              <a href="#" role="button" class="btn font-size-12">过滤字段</a>
+                            </div>
+                            <div class="pad20T">
+                              <div class="panel-group" id="accordion01" role="tablist" aria-multiselectable="false">
+                                <div class="item">
+                                  <div class="panel-heading" role="tab" id="heading01">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion01" href="#collapse01" aria-expanded="false" aria-controls="collapse01">
+                                      <i class="plusicon"></i>_time
+                                    </a>
+                                  </div>
+                                  <div id="collapse01" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading01">
+                                    <div class="panel-body">
+                                      <ul>
+                                        <li>
+                                          <a href="#">地图</a>
+                                        </li>
+                                        <li>
+                                          <a href="#">快速值</a>
+                                        </li>
+                                        <li>
+                                          <a href="#">快速值</a>
+                                        </li>
+                                        <li>
+                                          <a href="#">快速值</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="item">
+                                  <div class="panel-heading" role="tab" id="heading02">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion02" href="#collapse02" aria-expanded="false"
+                                      aria-controls="collapse02">
+                                      <i class="plusicon"></i>all_dst_ip_geolocation
+                                    </a>
+                                  </div>
+                                  <div id="collapse02" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading02">
+                                    <div class="panel-body">
+                                      <ul>
+                                        <li>
+                                          <a href="#">地图</a>
+                                        </li>
+                                        <li>
+                                          <a href="#">快速值</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="item">
+                                  <div class="panel-heading" role="tab" id="heading03">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion03" href="#collapse03" aria-expanded="false"
+                                      aria-controls="collapse03">
+                                      <i class="plusicon"></i>all_dst_ip_name
+                                    </a>
+                                  </div>
+                                  <div id="collapse03" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading03">
+                                    <div class="panel-body">
+                                      <ul>
+                                        <li>
+                                          <a href="#">地图</a>
+                                        </li>
+                                        <li>
+                                          <a href="#">快速值</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="pad10T">
+                              <p class="pad10B font-grey2">显示
+                                <a href="#" class="font-blue">当前页</a>或
+                                <a href="#" class="font-blue">所有</a>的字段</p>
+                              <input type="checkbox" name id="light" style="vertical-align:top;margin-top:5px;">
+                              <label for="light" class="font-size-12 font-grey2 font-normal">高亮显示结果</label>
+                            </div>
+                          </div>
+                          <!-- 装饰器 -->
+                          <div role="tabpanel" class="tab-pane  clearfix pad0A" id="zhuangshiqi">
+                            <div class="xs_btn_group">
+                              <div class="btn-group">
+                                <a href="#" role="button" class="btn font-size-12">默认</a>
+                                <a href="#" role="button" class="btn font-size-12">全部</a>
+                                <a href="#" role="button" class="btn font-size-12">无</a>
+                              </div>
+                              <a href="#" role="button" class="btn font-size-12">过滤字段</a>
+                            </div>
+                            <div class="pad20T">
+                              <div class="panel-group" id="accordion01" role="tablist" aria-multiselectable="false">
+                                <div class="item">
+                                  <div class="panel-heading" role="tab" id="heading01">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion01" href="#collapse01" aria-expanded="false" aria-controls="collapse01">
+                                      <i class="plusicon"></i>_time
+                                    </a>
+                                  </div>
+                                  <div id="collapse01" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading01">
+                                    <div class="panel-body">
+                                      <ul>
+                                        <li>
+                                          <a href="#">地图</a>
+                                        </li>
+                                        <li>
+                                          <a href="#">快速值</a>
+                                        </li>
+                                        <li>
+                                          <a href="#">快速值</a>
+                                        </li>
+                                        <li>
+                                          <a href="#">快速值</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="item">
+                                  <div class="panel-heading" role="tab" id="heading02">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion02" href="#collapse02" aria-expanded="false"
+                                      aria-controls="collapse02">
+                                      <i class="plusicon"></i>all_dst_ip_geolocation
+                                    </a>
+                                  </div>
+                                  <div id="collapse02" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading02">
+                                    <div class="panel-body">
+                                      <ul>
+                                        <li>
+                                          <a href="#">地图</a>
+                                        </li>
+                                        <li>
+                                          <a href="#">快速值</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="item">
+                                  <div class="panel-heading" role="tab" id="heading03">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion03" href="#collapse03" aria-expanded="false"
+                                      aria-controls="collapse03">
+                                      <i class="plusicon"></i>all_dst_ip_name
+                                    </a>
+                                  </div>
+                                  <div id="collapse03" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading03">
+                                    <div class="panel-body">
+                                      <ul>
+                                        <li>
+                                          <a href="#">地图</a>
+                                        </li>
+                                        <li>
+                                          <a href="#">快速值</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="pad10T">
+                              <p class="pad10B font-grey2">显示
+                                <a href="#" class="font-blue">当前页</a>或
+                                <a href="#" class="font-blue">所有</a>的字段</p>
+                              <input type="checkbox" name id="light" style="vertical-align:top;margin-top:5px;">
+                              <label for="light" class="font-size-12 font-grey2 font-normal">高亮显示结果</label>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col-lg_9 ">
+                    <div class="box ziduan relative clearfix bg_fff">
+                      <p class="font-grey1 font-size-18">统计字段</p>
+                      <div class="btn_group_right">
+                        <div class="dropdown dropdown_add">
+                          <button class="btn bl_btn btn_more dropdown-toggle   relative" type="button" id="add" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            添加仪到表盘
+                            <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu more_dropdown_menu" aria-labelledby="add">
+                            <li>
+                              <a href="#">其他操作</a>
+                            </li>
+                            <li>
+                              <a href="#">其他操作</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="#" rolr="button" class="deleteicon border">
+                          <i class=" "></i>
+                        </a>
+                      </div>
+                      <table class="table border text-center mrg20T mrg0B">
+                        <thead>
+                          <tr>
+                            <th>字段</th>
+                            <th>总数</th>
+                            <th>最小值</th>
+                            <th>最大值</th>
+                            <th>标准差</th>
+                            <th>方差</th>
+                            <th>合计</th>
+                            <th>基数</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>_time</td>
+                            <td>33.235</td>
+                            <td>1,222,5,55,</td>
+                            <td>1.999.999.99</td>
+                            <td>NaN</td>
+                            <td>-9,5569,999,99,9</td>
+                            <td>5558996,99999,99</td>
+                            <td>1,4545</td>
+                          </tr>
+
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="height20"></div>
+                    <div class="box bg_fff display-block">
+                      <div class="row panel_layout clearfix ">
+                        <div class=" panel_left  pad30B pad20L pad20R">
+                          <p class="font-size-18 font-grey1">所选来源</p>
+                          <div class="btn_group_right" style="margin-top:-24px;">
+                            <div class="dropdown dropdown_add ">
+                              <button class="btn bl_btn btn_more dropdown-toggle   relative" type="button" id="add" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                添加仪到表盘
+                                <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu more_dropdown_menu" aria-labelledby="add">
+                                <li>
+                                  <a href="#">其他操作</a>
+                                </li>
+                                <li>
+                                  <a href="#">其他操作</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="dropdown dropdown_dingzhi">
+                              <button class="btn bl_btn btn_more dropdown-toggle   relative" type="button" id="add" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                添加仪到表盘
+                                <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu more_dropdown_menu" aria-labelledby="add">
+                                <li>
+                                  <a href="#">其他操作</a>
+                                </li>
+                                <li>
+                                  <a href="#">其他操作</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <a href="#" rolr="button" class="deleteicon border">
+                              <i class=" "></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel_right ">
+                        <div class="table_box table_02">
+                          <table class="table table-bordered record_table mrg0B">
+                            <thead>
+                              <tr>
+                                <th>名称</th>
+                                <th>%</th>
+                                <th>日志消息总数</th>
+                                <th>操作</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="bg_fb">
+                                <td colspan="4">Top sources</td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <span class="color_block" style="background-color: #ff615f;"></span>182.92.192.147
+                                </td>
+                                <td>0.85</td>
+                                <td>149</td>
+                                <td>
+                                  <a href="#" class="zoomin"></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <span class="color_block" style="background-color: #00bca4;"></span>182.92.192.147
+                                </td>
+                                <td>0.85</td>
+                                <td>149</td>
+                                <td>
+                                  <a href="#" class="zoomin"></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <span class="color_block" style="background-color: #ff615f;"></span>182.92.192.147
+                                </td>
+                                <td>0.85</td>
+                                <td>149</td>
+                                <td>
+                                  <a href="#" class="zoomin"></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <span class="color_block" style="background-color: #00bca4;"></span>182.92.192.147
+                                </td>
+                                <td>0.85</td>
+                                <td>149</td>
+                                <td>
+                                  <a href="#" class="zoomin"></a>
+                                </td>
+                              </tr>
+                              <tr class="bg_fb">
+                                <td colspan="4">Top sources</td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <span class="color_block" style="background-color: #f461ad;"></span>182.92.192.147
+                                </td>
+                                <td>0.85</td>
+                                <td>149</td>
+                                <td>
+                                  <a href="#" class="zoomin"></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <span class="color_block" style="background-color: #ac5db6;"></span>182.92.192.147
+                                </td>
+                                <td>0.85</td>
+                                <td>149</td>
+                                <td>
+                                  <a href="#" class="zoomin"></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <span class="color_block" style="background-color: #4d9ecf;"></span>182.92.192.147
+                                </td>
+                                <td>0.85</td>
+                                <td>149</td>
+                                <td>
+                                  <a href="#" class="zoomin"></a>
+                                </td>
+                              </tr>
 
 
+
+                            </tbody>
+
+                          </table>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <!-- 其他1 end -->
                 <!-- 其他2 start -->
-                <div role="tabpanel" class="tab-pane " id="others2">
+                <div role="tabpanel" class="tab-pane clearfix pad0A active" id="others2">
+                  <div class="col-lg_3 mrg20R pad0L bg_fff">
+                    <div class="box">
+                      <div class="borderB pad10B">
+                        <div class="btn-group">
+                          <button type="button" class="no_update btn font-size-14 font-grey2  dropdown-toggle dropdown-toggle01" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            不更新
+                            <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a href="#">日志消息一</a>
+                            </li>
+                            <li>
+                              <a href="#">日志消息二</a>
+                            </li>
+                            <li>
+                              <a href="#">日志消息三</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="#" role="button" class="btn sm_btn grey_btn">模式</a>
+                        <a href="#" role="button" class="btn sm_btn grey_btn">保存搜索条件</a>
+                        <div class="btn-group savebtn_group">
+                          <button type="button" class="more_btn btn font-size-14 font-grey2 no-shadow dropdown-toggle " data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            更多操作
+                            <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a href="#">日志消息一</a>
+                            </li>
+                            <li>
+                              <a href="#">日志消息二</a>
+                            </li>
+                            <li>
+                              <a href="#">日志消息三</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="tab_02 pad25T">
+                        <ul class="nav nav-tabs" role="tablist">
+                          <li role="presentation" class=" active">
+                            <a href="#ziduan" aria-controls="home" role="tab" data-toggle="tab">字段</a>
+                          </li>
+                          <li>
+                            <a href="#zhuangshiqi" aria-controls="home" role="tab" data-toggle="tab">装饰器</a>
+                          </li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content mrg10T">
+                          <!-- 字段 -->
+                          <div role="tabpanel" class="tab-pane active clearfix pad0A active" id="ziduan">
+                            <div class="xs_btn_group">
+                              <div class="btn-group">
+                                <a href="#" role="button" class="btn font-size-12">默认</a>
+                                <a href="#" role="button" class="btn font-size-12">全部</a>
+                                <a href="#" role="button" class="btn font-size-12">无</a>
+                              </div>
+                              <a href="#" role="button" class="btn font-size-12">过滤字段</a>
+                            </div>
+                            <div class="pad20T">
+                              <div class="panel-group" id="accordion01" role="tablist" aria-multiselectable="false">
+                                <div class="item">
+                                  <div class="panel-heading" role="tab" id="heading01">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion01" href="#collapse01" aria-expanded="false" aria-controls="collapse01">
+                                      <i class="plusicon"></i>_time
+                                    </a>
+                                  </div>
+                                  <div id="collapse01" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading01">
+                                    <div class="panel-body">
+                                      <ul>
+                                        <li>
+                                          <a href="#">地图</a>
+                                        </li>
+                                        <li>
+                                          <a href="#">快速值</a>
+                                        </li>
+                                        <li>
+                                          <a href="#">快速值</a>
+                                        </li>
+                                        <li>
+                                          <a href="#">快速值</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="item">
+                                  <div class="panel-heading" role="tab" id="heading02">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion02" href="#collapse02" aria-expanded="false"
+                                      aria-controls="collapse02">
+                                      <i class="plusicon"></i>all_dst_ip_geolocation
+                                    </a>
+                                  </div>
+                                  <div id="collapse02" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading02">
+                                    <div class="panel-body">
+                                      <ul>
+                                        <li>
+                                          <a href="#">地图</a>
+                                        </li>
+                                        <li>
+                                          <a href="#">快速值</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="item">
+                                  <div class="panel-heading" role="tab" id="heading03">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion03" href="#collapse03" aria-expanded="false"
+                                      aria-controls="collapse03">
+                                      <i class="plusicon"></i>all_dst_ip_name
+                                    </a>
+                                  </div>
+                                  <div id="collapse03" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading03">
+                                    <div class="panel-body">
+                                      <ul>
+                                        <li>
+                                          <a href="#">地图</a>
+                                        </li>
+                                        <li>
+                                          <a href="#">快速值</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="pad10T">
+                              <p class="pad10B font-grey2">显示
+                                <a href="#" class="font-blue">当前页</a>或
+                                <a href="#" class="font-blue">所有</a>的字段</p>
+                              <input type="checkbox" name id="light" style="vertical-align:top;margin-top:5px;">
+                              <label for="light" class="font-size-12 font-grey2 font-normal">高亮显示结果</label>
+                            </div>
+                          </div>
+                          <!-- 装饰器 -->
+                          <div role="tabpanel" class="tab-pane  clearfix pad0A" id="zhuangshiqi">
+                            <div class="xs_btn_group">
+                              <div class="btn-group">
+                                <a href="#" role="button" class="btn font-size-12">默认</a>
+                                <a href="#" role="button" class="btn font-size-12">全部</a>
+                                <a href="#" role="button" class="btn font-size-12">无</a>
+                              </div>
+                              <a href="#" role="button" class="btn font-size-12">过滤字段</a>
+                            </div>
+                            <div class="pad20T">
+                              <div class="panel-group" id="accordion01" role="tablist" aria-multiselectable="false">
+                                <div class="item">
+                                  <div class="panel-heading" role="tab" id="heading01">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion01" href="#collapse01" aria-expanded="false" aria-controls="collapse01">
+                                      <i class="plusicon"></i>_time
+                                    </a>
+                                  </div>
+                                  <div id="collapse01" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading01">
+                                    <div class="panel-body">
+                                      <ul>
+                                        <li>
+                                          <a href="#">地图</a>
+                                        </li>
+                                        <li>
+                                          <a href="#">快速值</a>
+                                        </li>
+                                        <li>
+                                          <a href="#">快速值</a>
+                                        </li>
+                                        <li>
+                                          <a href="#">快速值</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="item">
+                                  <div class="panel-heading" role="tab" id="heading02">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion02" href="#collapse02" aria-expanded="false"
+                                      aria-controls="collapse02">
+                                      <i class="plusicon"></i>all_dst_ip_geolocation
+                                    </a>
+                                  </div>
+                                  <div id="collapse02" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading02">
+                                    <div class="panel-body">
+                                      <ul>
+                                        <li>
+                                          <a href="#">地图</a>
+                                        </li>
+                                        <li>
+                                          <a href="#">快速值</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="item">
+                                  <div class="panel-heading" role="tab" id="heading03">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion03" href="#collapse03" aria-expanded="false"
+                                      aria-controls="collapse03">
+                                      <i class="plusicon"></i>all_dst_ip_name
+                                    </a>
+                                  </div>
+                                  <div id="collapse03" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading03">
+                                    <div class="panel-body">
+                                      <ul>
+                                        <li>
+                                          <a href="#">地图</a>
+                                        </li>
+                                        <li>
+                                          <a href="#">快速值</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="pad10T">
+                              <p class="pad10B font-grey2">显示
+                                <a href="#" class="font-blue">当前页</a>或
+                                <a href="#" class="font-blue">所有</a>的字段</p>
+                              <input type="checkbox" name id="light" style="vertical-align:top;margin-top:5px;">
+                              <label for="light" class="font-size-12 font-grey2 font-normal">高亮显示结果</label>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col-lg_9 ">
+                    <div class="box bg_fff display-block">
+                      <div class="row panel_layout clearfix ">
+                        <div class=" panel_left  pad30B pad20L pad20R">
+                          <p class="font-size-18 font-grey1">模式</p>
+                          <p class="font-size-12 font-grey2 pad10T">在100000个采样事件中找到了350种模式</p>
+                        </div>
+                        <div>
+                          <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%;">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel_right ">
+                        <div class="table_02">
+                          <table class="table table-bordered record_table mrg0B">
+                            <thead>
+                              <tr>
+                                <th class="">百分比
+                                  <span class="btn_group triangle_group">
+                                    <a href="#" role="button" class="">
+                                      <i class="triangle-top font-grey1 "></i>
+                                    </a>
+                                    <a href="#" role="button" class="">
+                                      <i class="triangle-bottom font-grey1"></i>
+                                    </a>
+                                  </span>
+                                </th>
+                                <th>message
+                                  <span class="btn_group triangle_group">
+                                    <a href="#" role="button" class="">
+                                      <i class="triangle-top font-grey1 "></i>
+                                    </a>
+                                    <a href="#" role="button" class="">
+                                      <i class="triangle-bottom font-grey1"></i>
+                                    </a>
+                                  </span>
+                                </th>
+                                <th>事件数</th>
+                                <th>操作</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <span class="color_block" style="background-color: #ff615f;"></span>182.92.192.147
+                                </td>
+                                <td>0.85</td>
+                                <td>149</td>
+                                <td>
+                                  <a href="#" class="zoomin"></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <span class="color_block" style="background-color: #00bca4;"></span>182.92.192.147
+                                </td>
+                                <td>0.85</td>
+                                <td>149</td>
+                                <td>
+                                  <a href="#" class="zoomin"></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <span class="color_block" style="background-color: #ff615f;"></span>182.92.192.147
+                                </td>
+                                <td>0.85</td>
+                                <td>149</td>
+                                <td>
+                                  <a href="#" class="zoomin"></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <span class="color_block" style="background-color: #00bca4;"></span>182.92.192.147
+                                </td>
+                                <td>0.85</td>
+                                <td>149</td>
+                                <td>
+                                  <a href="#" class="zoomin"></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <span class="color_block" style="background-color: #f461ad;"></span>182.92.192.147
+                                </td>
+                                <td>0.85</td>
+                                <td>149</td>
+                                <td>
+                                  <a href="#" class="zoomin"></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <span class="color_block" style="background-color: #ac5db6;"></span>182.92.192.147
+                                </td>
+                                <td>0.85</td>
+                                <td>149</td>
+                                <td>
+                                  <a href="#" class="zoomin"></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <span class="color_block" style="background-color: #4d9ecf;"></span>182.92.192.147
+                                </td>
+                                <td>0.85</td>
+                                <td>149</td>
+                                <td>
+                                  <a href="#" class="zoomin"></a>
+                                </td>
+                              </tr>
 
 
+
+                            </tbody>
+
+                          </table>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <!-- 其他2end -->
-                <nav aria-label="Page navigation" class=" clearfix">
-                  <ul class="pagination">
-                    <li>
-                      <a href="#" aria-label="First">
-                        <span aria-hidden="true">首页</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" aria-label="Previous">
-                        <span aria-hidden="true">上一页</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">1</a>
-                    </li>
-                    <li>
-                      <a href="#">2</a>
-                    </li>
-                    <li>
-                      <a href="#">3</a>
-                    </li>
-                    <li>
-                      <a href="#">4</a>
-                    </li>
-                    <li>
-                      <a href="#">5</a>
-                    </li>
-                    <li>
-                      <a href="#">6</a>
-                    </li>
-                    <li>
-                      <a href="#">7</a>
-                    </li>
-                    <li>
-                      <a href="#">8</a>
-                    </li>
-                    <li>
-                      <a href="#" aria-label="Next">
-                        <span aria-hidden="true">下一页</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" aria-label="End">
-                        <span aria-hidden="true">尾页</span>
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
+
               </div>
+              <!-- 其他2end -->
+
             </div>
           </div>
         </div>
-        <script src="js/jquery.js"></script>
-        <script src="js/bootstrap.js"></script>
+      </div>
+
+    </div>
+  </div>
+  <!-- 主体 -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
 </body>
 
 </html>
