@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  .p1,.p3{
+user-select:none;
+  }
+  .p3  span{
+      user-select:text;
+      color:saddlebrown;
+ }
+  </style>
+</head>
+<body>
+<p class="p1">这是一段文字，即将使用user-select：none；</p>
+<p class="p2">这是一段没有使用user-select：none；的文字</p>
+<p class="p3">这是一段只有<span>user-select</span>可以被选择的文字</p>
+</body>
+</html>
