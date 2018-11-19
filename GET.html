@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    var xmlHttp;
+
+    function createxmlHttpRequest() {
+      if (window.ActiveXObject) {
+        xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+      } else if (window.XMLHttpRequest)
+        xmlHttp = new XMLHttpRequest();
+    }
+
+    function doGet(url) { //注意在传参数值的时候最好使用encodeURI处理一下，防止乱码
+      createxmlHttpRequest();
+      xmlHttp.open("GET",
+        'https://api.weixin.qq.com/cgi-bin/user/info?access_token=ACCESS_TOKEN&openid=wxf870d6b887623f7e&lang=zh_CN');
+      xmlHttp.send(null);
+      xmlHttp.onreadystatechange = function () {
+        if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+          alert('success');
+        } else {
+          alert('fail');
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>

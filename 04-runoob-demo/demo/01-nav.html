@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <section id="todos">
+    <h1>{{title}}</h1>
+  </section>
+  <section id="main">
+    <!-- 激活的菜单样式为 -->
+     <nav v-bind:class="active" v-on:click.prevent>
+      <ul>
+        <li><a href="#" class="home" v-on:click="makeActive('home')">Home</a></li>
+        <li><a href="#" class="projects" v-on:click="makeActive('projects')">Projects</a></li>
+        <li><a href="#" class="services" v-on:click="makeActive('services')">Services</a></li>
+        <li><a href="#" class="contact" v-on:click="makeActive('contact')">Concact</a></li>
+      </ul>
+    </nav>
+   <p>您选择了 <b>{{active}}</b>菜单</p>
+  </section>
+<script src="/assets/js/vue.js"></script>
+  <script>
+    var vm =  new Vue({
+      el:"#todos",
+      data:{
+        title:"导航",
+      }
+    })
+    // 创建一个新的Vue实例
+    var app=new Vue({
+      //DOM元素，挂载视图模型
+      el:"#main",
+      // 定义属性，并设置初始值
+      data:{
+        active:'home',
+      },
+      // 点击菜单时的方法函数
+      methods:{
+        makeActive:function(item){
+          this.active=item;
+        }
+      }
+    })
+  </script>
+</body>
+</html>
