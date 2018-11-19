@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .tooltip input{
+        border: none;
+        width: 100%;
+        line-height: 34px;
+        border-radius: 3px;
+        box-shadow: 0 2px 6px #bbb inset;
+        text-align: center;
+        font-size: 16px;
+        font-family: inherit;
+        color: #8d9395;
+        font-weight: bold;
+        outline: none;
+    }
+    </style>
+</head>
+<body>
+    <div id="main" v-cloak @click="hidetip">
+        <div class="tooltip" v-on:click.stop v-if="showtip">
+            <input type='text' v-model='message' placeholder="编辑文字" >
+        </div>
+        <p  >输入的内容是 {{message}}</p>
+        <p @click.stop="toggleTooltip">点我编辑文字</p>
+    </div>
+
+    <script src="../assets/js/vue.js"></script>
+    <script>
+        var main = new Vue({
+            el:'#main',
+            data:{
+                message:'',
+                showtip:'',
+            },
+            methods:{
+                hidetip:function(){
+                    this.showtip=false;
+                },
+                toggleTooltip:function(){
+                    this.showtip=!this.showtip;
+                }
+            }
+        })
+    </script>
+</body>
+</html>

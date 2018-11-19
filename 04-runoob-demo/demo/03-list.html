@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>订单列表</title>
+    <style>
+        ul li{
+            font-size: 24px;
+            height:50px;
+            line-height:50px;
+            text-align: center;
+            width:500px;
+            background: #e35885;
+            color:#fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="" id="main">
+        <ul v-for='item in items'>
+            <li @click="addprice(item)">
+                <p>{{item.name}}&nbsp;&nbsp;&nbsp;&nbsp;${{item.price|currency}}</p>
+            </li>
+
+        </ul>
+<p>总价：${{total}}</p>
+    </form>
+
+
+    <script src="../assets/js/vue.js"></script>
+    <script>
+        var main = new Vue({
+            el:'#main',
+            data:{
+                items:[
+                   { name:'web development',
+                        price:300,
+                   },{
+                       name:'js',
+                       price:279,
+                   },{
+                       name:'vue',
+                       price:966,
+                   },{
+                       name:'react',
+                       price:299
+                   }
+
+                ],
+                total:0,
+            
+            },
+            methods:{
+                addprice:function(){
+                 
+                    this.total  +=  this.item.price;
+                }
+            }
+        })
+    </script>
+</body>
+</html>
