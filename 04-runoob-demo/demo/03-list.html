@@ -16,47 +16,69 @@
             color:#fff;
             cursor: pointer;
         }
+        form ul li.active{
+    	background-color:#8ec16d;
+    }
     </style>
 </head>
 <body>
     <form action="" id="main">
         <ul v-for='item in items'>
-            <li @click="addprice(item)">
-                <p>{{item.name}}&nbsp;&nbsp;&nbsp;&nbsp;${{item.price|currency}}</p>
+            <li @click="toggleActive(item)" v-bind:class="{'active':item.active}">
+                <p>{{item.name}}&nbsp;&nbsp;&nbsp;&nbsp;{{item.price|currency}}</p>
             </li>
 
         </ul>
-<p>总价：${{total}}</p>
+<p>总价：{{ addprice() | currency}}</p>
     </form>
 
 
     <script src="../assets/js/vue.js"></script>
     <script>
+        // 自定义过滤器“currency”
+        Vue.filter('currency',function(value){
+            return '$'+ value.toFixed(2);
+        })
         var main = new Vue({
             el:'#main',
             data:{
                 items:[
                    { name:'web development',
                         price:300,
+                        active:true,
                    },{
                        name:'js',
                        price:279,
+                       active:false,
                    },{
                        name:'vue',
                        price:966,
+                       active:false,
                    },{
                        name:'react',
-                       price:299
+                       price:299,
+                       active:false,
+
                    }
 
                 ],
-                total:0,
+                
             
             },
             methods:{
+                toggleActive:function(i){
+                    i.active =! i.active
+                },
                 addprice:function(){
-                 
-                    this.total  +=  this.item.price;
+                    var total=0;
+                    console.log('1')
+                    this.items.forEach(function(item){
+                    if(item.active){
+                    total  +=  item.price;
+                    }
+
+                });
+                    return total;
                 }
             }
         })
