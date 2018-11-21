@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>todos</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+<style>
+  ul li{
+    cursor: pointer;
+  }
+  .finished{
+    color:#aeaeae;
+    text-decoration-line:line-through; 
+  }
+
+</style>
+</head>
+<body>
+ <div id="main">
+    <h1>{{title}}</h1>
+    <div>
+      <input v-model="addlist" @keyup.enter="newList">
+      <ul>
+          <li v-for="list in lists" v-bind:class="{finished : list.finished}" @click="togelFinished(list)">{{list.name}}</li>
+      </ul>
+    </div>
+ </div>
+<script src="../assets/js/vue.js"></script>
+  <script>
+    // 创建一个新的Vue实例
+    var app=new Vue({
+      //DOM元素，挂载视图模型
+      el:"#main",
+      // 定义属性，并设置初始值
+      data:{
+        title:'To Do Lists',
+        addlist:'',
+        lists:[],
+      },
+      methods:{
+        togelFinished:function(list){
+           return list.finished =! list.finished;
+        },
+        addList:function(i){
+
+        },
+        newList:function(){
+          
+          this.lists.push({
+            name:this.addlist,
+            finished:false,
+            
+          })
+          this.addlist="";
+        }
+      }
+    
+    })
+  </script>
+</body>
+</html>
